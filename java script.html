@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<header id="header">
+   
+</header>
+<hr>
+<body id="body">
+    <div class="bottomnav">
+<ul>
+    <a href="#"> <li><button id="openMenuBtn">Open Menu</button></li></a>
+    <a href="htmltutorialnew.html"><li>HTML</li></a>
+    <a href="css tutorial .html"><LI>CSS</LI></a>
+  
+    
+   
+</ul>
+    </div>
+
+<!--center of the code-->
+
+
+
+ <!--html tutorial -->
+ <nav  class="menu-bar" id="leftMenu"> 
+   <button id="closeMenuBtn">Close Menu</button>
+    <h3>JS Tutorial</h3>
+    <a href="#" onclick="showTopic('topic1')">Introduction to JS</a><br>
+    <a href="#" onclick="showTopic('topic2')">Variables </a><br>
+    <a href="#" onclick="showTopic('topic3')">External js</a><br>
+    <a href="#" onclick="showTopic('topic4')">Operators</a><br>
+    <a href="#" onclick="showTopic('topic5')">Data types</a><br>
+    <a href="#" onclick="showTopic('topic6')"> DOM</a><br>
+    <a href="#" onclick="showTopic('topic7')"> Length Converter</a><br>
+    <a href="#" onclick="showTopic('topic8')"> Math object</a><br>
+    <a href="#" onclick="showTopic('topic9')">String</a><br>
+    <a href="#" onclick="showTopic('topic10')">Template literals</a><br>
+    <a href="#" onclick="showTopic('topic11')">Arrays</a><br>
+    <a href="#" onclick="showTopic('topic12')">prompt</a><br>
+    <a href="#" onclick="showTopic('topic13')">Alert</a><br>
+    <a href="#" onclick="showTopic('topic14')"> If else</a><br>
+    <a href="#" onclick="showTopic('topic15')">FD interest rate calculator</a><br>
+    <a href="#" onclick="showTopic('topic16')">Switch</a><br>
+    <a href="#" onclick="showTopic('topic17')">Event Listener</a><br>
+    <a href="#" onclick="showTopic('topic18')"> Objects</a><br>
+    <a href="#" onclick="showTopic('topic19')"> Loops</a><br>
+    <a href="#" onclick="showTopic('topic20')">Color Flipper</a><br>
+    <a href="#" onclick="showTopic('topic21')">Function types</a><br>
+    <a href="#" onclick="showTopic('topic22')">Callback</a><br>
+    <a href="#" onclick="showTopic('topic23')">ForEach</a><br>
+    <a href="#" onclick="showTopic('topic24')"> Map,Filter Reduce</a><br>
+    <a href="#" onclick="showTopic('topic25')">Returning Functions and Closure</a><br>
+    <a href="#" onclick="showTopic('topic26')">Memory Allocation</a><br>
+    <a href="#" onclick="showTopic('topic27')">OOP in js</a><br>
+    <a href="#" onclick="showTopic('topic28')"> Error Handling</a><br>
+    <a href="#" onclick="showTopic('topic29')">JSON</a><br>
+    <a href="#" onclick="showTopic('topic30')">Digital Clock</a><br>
+    <a href="#" onclick="showTopic('topic31')">Event Listener</a><br>
+    <a href="#" onclick="showTopic('topic32')">Event Listener</a><br>
+   
+
+
+  </nav>
+  
+  <div class="content">
+       <br>
+      <br>
+      <br>
+    <div id="topic1" class="topic active">
+        <h2>Introduction to JavaScript</h2>
+<p>JavaScript is a high-level, versatile programming language primarily used to create interactive effects within web browsers. It is one of the core technologies of the World Wide Web, alongside HTML and CSS. JavaScript is an essential skill for web developers, enabling them to add dynamic and interactive elements to websites</p>
+
+<span>Key Characteristics</span>
+<dl>
+    <dt>Interpreted Language</dt>
+    <dd>JavaScript is executed by the browser's JavaScript engine at runtime, meaning it doesn't need to be compiled before execution</dd>
+    <dt>Event-Driven</dt>
+    <dd>JavaScript responds to user interactions such as clicks, hovers, form submissions, etc</dd>
+    <dt>Lightweight and Versatile</dt>
+    <dd>It can be used for both client-side and server-side development (with environments like Node.js)</dd>
+    <dt>Prototypal Inheritance</dt>
+    <dd>JavaScript uses prototypes instead of traditional class-based inheritance</dd>
+</dl>
+
+
+      
+    </div>
+    
+    <div id="topic2" class="topic">
+  <h2>variables</h2>
+  <p>Variables are used in JavaScript to hold values for data. Variable values are subject to alter while a program is running. The three keywords var, let, and const in JavaScript are used to declare variables. Each has a distinct range of actions.</p>
+  <h2>Variable Declaration and Initialization</h2>
+  <dl>
+    <dt>1.var</dt>
+    <dd>Scope: Function-scoped</dd>
+    <dd>Hoisting: Variables declared with var are hoisted to the top of their scope and initialized with undefined</dd>
+
+  </dl>
+  <div class="cmd">
+    // Example using var  <br>
+function exampleVar() { <br>
+    var x = 10;<br>
+    if (true) {<br>
+        var x = 20; // same variable<br>
+        console.log(x); // 20<br>
+    }<br>
+    console.log(x); // 20<br>
+}<br>
+
+exampleVar();<br>
+
+  </div>
+<dl>
+    <dt>2. let</dt>
+    <dd>Scope: Block-scoped</dd>
+    <dd>Hoisting: Variables declared with let are hoisted to the top of their block but are not initialized</dd>
+</dl>        
+<div class="cmd">
+    // Example using let  <br>
+function exampleLet() { <br>
+    let y = 10;<br>
+    if (true) {<br>
+        let y = 20; // different variable<br>
+        console.log(y); // 20<br>
+    }<br>
+    console.log(y); // 10<br>
+}<br>
+
+exampleLet();<br>
+
+</div>
+<dl>
+    <dt>3. const</dt>
+    <dd>Scope: Block-scoped</dd>
+    <dd>Hoisting: Variables declared with const are hoisted to the top of their block but are not initialized</dd>
+    <dd>Immutability: The value of a const variable cannot be changed through reassignment</dd>
+</dl>
+<div class="cmd">
+    // Example using const<br>
+function exampleConst() {<br>
+    const z = 10; <br>
+    if (true) {<br>
+        const z = 20; // different variable<br>
+        console.log(z); // 20<br>
+    }<br>
+    console.log(z); // 10<br>
+}<br>
+
+exampleConst();<br>
+
+// Uncommenting the following line will cause an error<br>
+// z = 30; // TypeError: Assignment to constant variable<br>
+
+</div>
+<h2>Examples of Variable Usage</h2>
+<iframe src="https://trinket.io/embed/html/c2796739c5" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+          </div>
+
+    <div id="topic3" class="topic">
+    <h2>external JavaScrip</h2>
+    <p>When your projects get bigger, it's a good idea to use external JavaScript files for code organization and maintenance. By separating your JavaScript logic from your HTML structure, you can write more modular and manageable code.</p>
+    <h2>How to Use External JavaScript</h2>
+    <p>You utilize the &lt;script&gt; element with the src attribute pointing to the location of your JavaScript file in order to include an external JavaScript file in your HTML document.</p>
+    <span>Example</span> <br>
+    <label>Step 1: Create the HTML File</label>
+    <iframe src="https://trinket.io/embed/html/e8072a6c74" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <label>Step 2: Create the JavaScript File</label>
+    <iframe src="https://trinket.io/embed/html/fb2f42046d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span> Both Example</span>
+    <iframe src="https://trinket.io/embed/html/fc1dfb1747" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+</div>
+
+    <div id="topic4" class="topic">
+    <h2>Operators in JavaScript</h2>
+    <p>In JavaScript, operators are unique symbols that are used to manipulate operands. To get a new value, they can work with variables and data. The several kinds of JavaScript operators are listed here, along with descriptions and sample code for each.</p>
+    <h2>1. Arithmetic Operators</h2>
+    <p><label>Addition (+)</label>       : Adds two numbers <br>
+       <label> Subtraction (-)</label>   : Subtracts one number from another<br>
+        <label>Multiplication (*)</label>: Multiplies two numbers<br>
+        <label>Division (/)</label>      : Divides one number by another<br>
+        <label> Modulus (%)</label>      : Returns the remainder of a division<br>
+      <label>Exponentiation (**)</label> : Raises the first operand to the power of the second operand<br>
+      <label>Increment (++)</label>      : Increases a number by one<br>
+      <label>Decrement (--)</label>      : Decreases a number by one<br>
+    </p>
+    <span>Example</span>
+    <iframe src="https://trinket.io/embed/html/1515d9f9b9" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>2. Assignment Operators</h2>
+    <p>Assignment operators assign values to variables</p>
+    <p><label>Assignment (=)</label>: Assigns the right value to the left variable<br>
+      <label>Addition assignment (+=)</label>  : Adds the right value to the left variable and assigns the result<br>
+      <label> Subtraction assignment (-=)</label>  : Subtracts the right value from the left variable and assigns the result<br>
+      <label>Multiplication assignment (*=)</label>  : Multiplies the left variable by the right value and assigns the result<br>
+      <label>Division assignment (/=)</label>  : Divides the left variable by the right value and assigns the result<br>
+      <label>Modulus assignment (%=)</label>  : Takes modulus using the left and right variables and assigns the result.</p>
+
+      <iframe src="https://trinket.io/embed/html/02433b3e96" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>3. Comparison Operators</h2>
+      <p>Comparison operators compare two values and return a boolean value (true or false)</p>
+      <p><label>Equal to (==)</label>: Checks if two values are equal<br>
+       <label> Strict equal to (===)</label>: Checks if two values and their types are equal<br>
+       <label> Not equal to (!=)</label>: Checks if two values are not equal<br>
+      <label>Strict not equal to (!==)</label>  : Checks if two values and their types are not equal<br>
+     <label> Greater than (>)</label>  : Checks if the left value is greater than the right value<br>
+      <label>Less than (<)</label>  : Checks if the left value is less than the right value<br>
+      <label>Greater than or equal to (>=)</label>  : Checks if the left value is greater than or equal to the right value<br>
+     <label> Less than or equal to (<=)</label>  : Checks if the left value is less than or equal to the right value</p>
+    <span>Example</span>
+    <iframe src="https://trinket.io/embed/html/451b3b7799" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>4. Logical Operators</h2>
+    <p>Logical operators are used to combine or invert boolean values</p>
+    <p><label>Logical AND (&&)</label>: Returns true if both operands are true<br>
+      <label>Logical OR (||)</label>  : Returns true if one of the operands is true<br>
+      <label>Logical NOT (!)</label>  : Inverts the boolean value</p>
+    <span>Example</span>
+    <iframe src="https://trinket.io/embed/html/8f9865e4b7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>5. Bitwise Operators</h2>
+    <p>Bitwise operators perform operations on the binary representations of numbers</p>
+    <p><label>AND (&)</label>: Sets each bit to 1 if both bits are 1<br>
+        <label>OR (|)</label>: Sets each bit to 1 if one of two bits is 1<br>
+        <label>XOR (^)</label>: Sets each bit to 1 if only one of two bits is 1<br>
+        <label>NOT (~)</label>: Inverts all the bits<br>
+       <label> Left shift (<<)</label>: Shifts bits to the left<br>
+       <label> Right shift (>>)</label>: Shifts bits to the right</p>
+       <span>Example</span>
+       <iframe src="https://trinket.io/embed/html/35f310adac" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>6. String Operators</h2>
+       <p>String operators are used to concatenate strings</p>
+       <dl>
+        <dt>Concatenation (+)</dt>
+        <dd> Combines two strings</dd>
+       </dl>
+       <iframe src="https://trinket.io/embed/html/c719818c65" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>7. Conditional (Ternary) Operator</h2>
+       <p>The conditional operator assigns a value based on a condition</p>
+       <span>Example</span>
+       <iframe src="https://trinket.io/embed/html/3f1ba8046e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+    </div>
+
+
+    <div id="topic5" class="topic">
+    <h2>data types</h2>
+     <p>JavaScript has several data types, which can be broadly categorized into primitive types and reference types. Here's an explanation of each, along with examples</p>
+     <h2>Primitive Types</h2>
+     <dl>
+      <dt>1.Number</dt>
+      <dd>Represents both integer and floating-point numbers</dd>
+      <dt>Example</dt>
+      <div class="cmd">
+        let age = 25; <br>
+let price = 19.99; <br>
+      </div>
+     <dt>2.String</dt>
+     <dd>Represents a sequence of characters</dd>
+     <dt>Example</dt>
+     <div class="cmd">
+      let name = "John"; <br>
+let greeting = 'Hello, World!'; <br>
+
+     </div>
+     <dt>3.Boolean</dt>
+     <dd>Represents a logical entity and can have two values: true or false</dd>
+     <dt>Example</dt>
+     <div class="cmd">
+      let isStudent = true; <br>
+let hasPassed = false; <br>
+
+     </div>
+    <dt>4.Undefined</dt>
+    <dd>Represents a variable that has been declared but not assigned a value</dd>
+    <dt>Example</dt>
+    <div class="cmd">
+      let x; <br>
+console.log(x); // Output: undefined <br>
+
+    </div>
+     <dt>5.Null</dt>
+     <dd>Represents the intentional absence of any object value</dd>
+     <dt>Example</dt>
+     <div class="cmd">
+      let y = null; <br>
+console.log(y); // Output: null <br>
+
+     </div>
+     <dt>6.Symbol (introduced in ECMAScript 6)</dt>
+     <dd>Represents a unique and immutable identifier</dd>
+     <dt>Example</dt>
+    <div class="cmd">
+      let sym1 = Symbol('identifier'); <br>
+let sym2 = Symbol('identifier'); <br>
+console.log(sym1 === sym2); // Output: false <br>
+
+    </div>
+    <dt>7.BigInt</dt>
+    <dd>Represents integers with arbitrary precision</dd>
+    <dt>Example</dt>
+    <div class="cmd">
+      let bigNumber = BigInt(1234567890123456789012345678901234567890n); <br>
+console.log(bigNumber); // Output: 1234567890123456789012345678901234567890n <br>
+
+    </div>
+     </dl>
+
+
+     
+    </div>
+
+    <div id="topic6" class="topic active">
+      <h2>Document Object Model (DOM)</h2>
+      <p>Web documents have a programming interface called the Document Object Model (DOM). Programs can alter the document's structure, design, and content by using it as a representation of the page. A structured representation of the document as a tree is provided by the DOM. Each node in this tree represents a different component of the page, such as an element, attribute, or text.</p>
+      <span>Key Concepts of the DOM</span>
+      <p>
+<label>Document</label>: The root of the DOM tree, representing the entire HTML document <br>
+<label>Element</label>: Individual parts of the document, such as paragraphs, headings, links, etc<br>
+<label>Node</label>  : Any single point in the document tree. Nodes can be elements, text, or comments<br>
+<label>Attributes</label>  : Additional information provided in elements, like class, id, src, etc<br>
+ <label>Text</label> : Text content within an element</p>
+ <h2>Common DOM Manipulation Methods</h2>
+ <span>1.Selecting Elements</span>
+ <p>
+<label>document.getElementById(id)</label>: Selects an element by its ID<br>
+<label>document.getElementsByClassName(className)</label>: Selects elements by their class name<br>
+<label>document.getElementsByTagName(tagName)</label>: Selects elements by their tag name<br>
+<label>document.querySelector(selector)</label>: Selects the first element that matches a CSS selector<br>
+<label>document.querySelectorAll(selector)</label>: Selects all elements that match a CSS selector</p>
+<span>2.Modifying Elements</span>
+<p>
+<label>element.innerHTML</label>: Gets or sets the HTML content of an element<br>
+<label>element.textContent</label>: Gets or sets the text content of an element<br>
+<label>element.setAttribute(name, value)</label>: Sets an attribute on an element<br>
+<label>element.style.propertyName</label>: Gets or sets a CSS property on an element<br>
+<label>element.classList.add(className)</label>: Adds a class to an element<br>
+<label>element.classList.remove(className)</label>: Removes a class from an element</p>
+<span>3.Creating and Removing Elements</span>
+<p>
+<label>document.createElement(tagName)</label>: Creates a new element<br>
+<label>parentElement.appendChild(newElement)</label>: Appends a new child element to a parent element<br>
+<label>parentElement.removeChild(childElement)</label>: Removes a child element from a parent element</p>
+<h2>Example</h2>
+<iframe src="https://trinket.io/embed/html/1714cacca1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      
+    </div>
+
+      <div id="topic7" class="topic">
+      <h2>LengthConverter</h2>
+      <iframe src="https://trinket.io/embed/html/b20b06121c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+    </div>
+
+      <div id="topic8" class="topic">
+        <h2>Math object in JavaScript</h2>
+        <p>The Math object in JavaScript is a built-in object that has properties and methods for mathematical constants and functions. Unlike other global objects, Math is not a constructor. All properties and methods of Math are static, meaning they can be called directly using Math itself, rather than being called on instances of Math</p>
+        <h2>Common Methods of the Math Object</h2>
+        <dl>
+          <dt>1.Math.abs(x)</dt>
+          <dd>Returns the absolute value of a number</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.abs(-5); // Output: 5
+
+          </div>
+          <dt>2.Math.ceil(x)</dt>
+          <dd>Rounds a number up to the nearest integer</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.ceil(4.2); // Output: 5
+
+          </div>
+          <dt>3.Math.floor(x)</dt>
+          <dd>Rounds a number down to the nearest integer</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.floor(4.8); // Output: 4
+
+          </div>
+          <dt>4.Math.round(x)</dt>
+          <dd>Rounds a number to the nearest integer</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.round(4.5); // Output: 5 <br>
+Math.round(4.4); // Output: 4
+
+          </div>
+          <dt>5.Math.max(x, y, ...)</dt>
+          <dd>Returns the largest of zero or more numbers</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.max(1, 3, 2); // Output: 3
+
+          </div>
+          <dt>6.Math.min(x, y, ...)</dt>
+          <dd>Returns the smallest of zero or more numbers</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.min(1, 3, 2); // Output: 1
+
+          </div>
+          <dt>7.Math.random()</dt>
+          <dd>Returns a pseudo-random number between 0 (inclusive) and 1 (exclusive)</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.random(); // Output: a number between 0 and 1
+
+          </div>
+          <dt>8.Math.sqrt(x)</dt>
+          <dd>Returns the square root of a number</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.sqrt(16); // Output: 4
+
+          </div>
+          <dt>9.Math.pow(base, exponent)</dt>
+          <dd>Returns the base to the exponent power, that is, base^exponent</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.pow(2, 3); // Output: 8
+
+          </div>
+          <dt>10.Math.PI</dt>
+          <dd>Represents the ratio of the circumference of a circle to its diameter, approximately 3.14159</dd>
+          <dt>Example</dt>
+          <div class="cmd">
+            Math.PI; // Output: 3.141592653589793
+
+          </div>
+        </dl>
+        <span>JavaScript Math Object Examples</span>
+        <iframe src="https://trinket.io/embed/html/eda9b95f68" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic9" class="topic">
+      <h2>JavaScript strings</h2>
+      <p>In JavaScript, strings are used to represent and manipulate text. A string in JavaScript is a sequence of characters enclosed in single quotes ('), double quotes ("), or backticks (`). Strings are immutable, meaning that once a string is created, it cannot be changed. However, new strings can be created based on operations performed on existing strings</p>
+      <h2>Common String Methods</h2>
+      <dl>
+        <dt>1.Length Property</dt>
+        <dd>str.length: Returns the length of the string</dd>
+        <div class="cmd">let str = "Hello, World!"; <br>
+console.log(str.length); // Output: 13 <br>
+</div>
+<dt>2.Accessing Characters</dt>
+<dd>Characters can be accessed using bracket notation or the charAt method</dd>
+<div class="cmd">let str = "Hello"; <br>
+console.log(str[0]); // Output: H <br>
+console.log(str.charAt(1)); // Output: e <br>
+</div>
+<dt>3.String Concatenation</dt>
+<dd>Concatenating strings using the + operator or concat method</dd>
+<div class="cmd">
+  let str1 = "Hello"; <br>
+let str2 = "World"; <br>
+console.log(str1 + ", " + str2 + "!"); // Output: Hello, World! <br>
+console.log(str1.concat(", ", str2, "!")); // Output: Hello, World! <br>
+
+</div>
+<dt>4.String Methods</dt>
+<p>
+<label>toUpperCase()</label>: Converts the string to uppercase <br>
+<label>toLowerCase()</label>; Converts the string to lowercase <br>
+<label>trim()</label> :Removes whitespace from both ends of the string <br>
+<label>includes(substring)</label>: Checks if the string contains a specified substring<br>
+<label>indexOf(substring)</label>: Returns the index of the first occurrence of the specified substring<br>
+<label>substring(start, end)</label>: Returns a substring between the start and end indices<br>
+<label>replace(searchValue, newValue)</label>: Replaces occurrences of searchValue with newValue</p>
+
+
+      </dl>
+<h2>Example Usage of String Methods</h2>
+<iframe src="https://trinket.io/embed/html/265329a593" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic10" class="topic">
+        <h2>Template literals</h2>
+        <p>With the introduction of template literals in ECMAScript 2015 (ES6), JavaScript strings may now be defined more easily, facilitating the interpolation of variables and expressions. Backticks (~) are used to encapsulate them rather than single or double quotations.</p>
+        <span>Benefits of Template Literals</span>
+        <dl>
+          <dt>1.Easy Variable Insertion</dt>
+          <dd>Variables and expressions can be directly embedded within template literals using ${...} syntax</dd>
+          <dt>2.Multiline Strings</dt>
+          <dd>Template literals support multiline strings without needing escape characters like \n</dd>
+          <dt>3.Enhanced Readability</dt>
+          <dd>Improved readability compared to traditional string concatenation, especially for longer strings</dd>
+        </dl>
+    <span>Example Usage</span>
+    <iframe src="https://trinket.io/embed/html/f8d35c2b1f" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>Multiline Strings</span>
+    <iframe src="https://trinket.io/embed/html/49be05c085" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>Tagged Templates</span>
+    <p>Template literals can also be used with functions called "tagged templates". Tagged templates allow you to process template literals with a function. The function (the tag) receives the template literal's text as the first argument, and the expressions as subsequent arguments</p>
+    <iframe src="https://trinket.io/embed/html/2059d0f79c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+    
+      </div>
+
+      <div id="topic11" class="topic active">
+        <h2>JavaScript array</h2>
+        <p>In JavaScript, an array is a data structure that allows you to store multiple values in a single variable. Arrays can hold values of different types and are ordered, meaning each value is stored at a specific, numbered position called an index. Arrays are dynamic, so you can change their size by adding or removing elements</p>
+        <span>Creating an Array</span>
+        <p>You can create an array using the array literal syntax or the Array constructor</p>
+        <dl>
+          <dt>1.Array Literal Syntax</dt>
+          <div class="cmd">
+            let fruits = ["Apple", "Banana", "Cherry"];
+
+          </div>
+          <dt>2.Array Constructor</dt>
+          <div class="cmd">
+            let fruits = new Array("Apple", "Banana", "Cherry");
+
+          </div>
+        </dl>
+        <span>Accessing Array Elements</span>
+        <p>You can access elements in an array using their index. Array indices are zero-based, meaning the first element is at index 0</p>
+        <iframe src="https://trinket.io/embed/html/ed2eab207b" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <span>Common Array Methods</span>
+        <dl>
+          <dt>1.push()</dt>
+          <dd>Adds one or more elements to the end of an array</dd>
+          <div class="cmd">
+            fruits.push("Date"); <br>
+console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Date"]
+
+          </div>
+          <dt>2.pop()</dt>
+          <dd>Removes the last element from an array</dd>
+          <div class="cmd">fruits.pop(); <br>
+console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
+</div>
+          <dt>3.shift()</dt>
+          <dd>Removes the first element from an array</dd>
+          <div class="cmd">fruits.shift(); <br>
+console.log(fruits); // Output: ["Banana", "Cherry"] 
+          </div>
+          <dt>4.unshift()</dt>
+          <dd>Adds one or more elements to the beginning of an array</dd>
+          <div class="cmd">
+        fruits.unshift("Apricot"); <br>
+console.log(fruits); // Output: ["Apricot", "Banana", "Cherry"]
+
+          </div>
+          <dt>5.splice()</dt>
+          <dd>Adds or removes elements from an array</dd>
+          <div class="cmd">// Remove 1 element at index 1 <br>
+fruits.splice(1, 1);<br>
+console.log(fruits); // Output: ["Apricot", "Cherry"]<br>
+
+// Add 2 elements at index 1<br>
+fruits.splice(1, 0, "Banana", "Blueberry");<br>
+console.log(fruits); // Output: ["Apricot", "Banana", "Blueberry", "Cherry"]<br>
+        </div>
+        <dt>6.slice()</dt>
+        <dd>Returns a shallow copy of a portion of an array into a new array</dd>
+        <div class="cmd">
+          let citrus = fruits.slice(1, 3); <br>
+console.log(citrus); // Output: ["Banana", "Blueberry"]
+
+        </div>
+        <dt>7.forEach()</dt>
+        <dd>Executes a provided function once for each array element</dd>
+        <div class="cmd">
+          fruits.forEach(function(fruit) { <br>
+            console.log(fruit); <br>
+          }); <br>
+          // Output: <br>
+          // Apricot <br>
+          // Banana <br>
+          // Blueberry <br>
+          // Cherry <br>
+          
+        </div>
+        <dt>8.map()</dt>
+        <dd>Creates a new array populated with the results of calling a provided function on every element in the calling array</dd>
+        <div class="cmd">
+          let upperFruits = fruits.map(function(fruit) {<br>
+            return fruit.toUpperCase();<br>
+          });<br>
+          console.log(upperFruits); // Output: ["APRICOT", "BANANA", "BLUEBERRY", "CHERRY"]<br>
+          
+        </div>
+        </dl>
+      <span>Example Code</span>
+      <iframe src="https://trinket.io/embed/html/da8c3a473c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+
+      <div id="topic12" class="topic">
+     <h2>prompt</h2>
+     <p>It looks like you are asking about the prompt function in JavaScript. The prompt function is used to display a dialog box that prompts the user for input. It is a simple way to gather input from the user. The dialog box that appears contains a text input field and buttons for the user to submit or cancel the input</p>
+     <span>Using prompt</span>
+     <iframe src="https://trinket.io/embed/html/486f93fb8d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <h2>Example HTML and JavaScript Code</h2>
+     <iframe src="https://trinket.io/embed/html/204d55453f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic13" class="topic">
+        <h2>Alert</h2>
+        <p>The alert function in JavaScript is used to show a message in a dialog box that has a "OK" button. It is frequently employed to inform or caution consumers. Because the alert dialog box is modal, users cannot interact with the webpage until they click the "OK" button to dismiss it.</p>
+        <span>Example Usage</span>
+        <div class="cmd">alert("This is an alert message.");
+        </div>
+        <span>Customizing Alert Messages</span>
+        <iframe src="https://trinket.io/embed/html/47a55e637f" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <span>Template Literals (ES6)</span>
+        <iframe src="https://trinket.io/embed/html/2a51aaf2e3" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <dl>
+          <dt>When to Use alert</dt>
+          <dd>* Use alert to provide important information to users, such as confirmation messages or warnings</dd>
+          <dd>* Avoid overusing alert as it can be intrusive and disrupt the user experience. Consider using other methods like console.log for debugging or confirm and prompt for user interactions that require more than just information display</dd>
+
+        </dl>
+     
+
+      </div>
+
+      <div id="topic14" class="topic">
+      <h2>if...else statement</h2>
+      <p>Code that needs to be executed conditionally uses the if...else phrase. It lets you designate which block of code should run when a specific condition is met and which block should run when the condition is not met.</p>
+      <h2>Syntax</h2>
+      <div class="cmd">
+        if (condition) { <br> <br>
+          // Code to execute if the condition is true <br> <br>
+      } else { <br> <br>
+          // Code to execute if the condition is false <br> <br>
+      }
+      
+      </div>
+      <span>Example</span>
+      <iframe src="https://trinket.io/embed/html/3e5d78f070" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Multiple Conditions: else if</h2>
+      <p>You can also chain multiple conditions using else if</p>
+      <iframe src="https://trinket.io/embed/html/8c5a739d94" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Nested if...else Statements</h2>
+      <p>You can also nest if...else statements within each other</p>
+      <span>Example</span>
+      <iframe src="https://trinket.io/embed/html/edc5baa3e0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Ternary Operator (? :)</h2>
+      <p>In JavaScript, you can also use the ternary operator (? :) as a shorthand for simple if...else statements</p>
+      <span>Syntax</span>
+      <div class="cmd">
+        condition ? expressionIfTrue : expressionIfFalse
+
+      </div>
+      <span>Example</span>
+      <iframe src="https://trinket.io/embed/html/24688448b6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+      </div>
+
+      <div id="topic15" class="topic active">
+        <h2>FD interest rate calculator</h2>
+        <iframe src="https://trinket.io/embed/html/6fc9d1018a" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+    
+      </div>
+
+      <div id="topic16" class="topic active">
+        <h2>switch statement in JavaScript</h2>
+        <p>The switch statement in JavaScript is a control flow statement that allows you to execute one of many code blocks based on the value of an expression. It is similar to using multiple if...else if statements but is often more readable and concise when dealing with numerous conditions</p>
+        <span>Syntax</span>
+        <iframe src="https://trinket.io/embed/html/abf3876bec" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <p>
+<label>expression</label>: This is the value that you are comparing against the case values <br>
+<label>case value</label>:: This is a value to compare with the expression. If they match, the code block associated with this case will execute <br>
+<label>break</label>: This keyword terminates the switch statement. If omitted, execution will continue to the next case (fall-through) <br>
+<label>default</label>: This is optional and specifies the code to run if there is no case match. It is like the else in an if...else statement
+        </p>
+        <span>Example</span>
+        <iframe src="https://trinket.io/embed/html/590710357f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <span>Example</span>
+        <iframe src="https://trinket.io/embed/html/b44e39ade1" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      
+      </div>
+
+      <div id="topic17" class="topic">
+        <h2>event listener in JavaScript</h2>
+        <p>In JavaScript, an event listener is a mechanism to launch a function in response to a certain event on an HTML element. To manage user interactions like clicks, keystrokes, mouse movements, and more, you can add event listeners to items. For this, the addEventListener function is frequently utilized.</p>
+        <span>Example Using HTML and JavaScript</span>
+        <p>Let's create an example where clicking a button changes the text of a paragraph</p>
+        <iframe src="https://trinket.io/embed/html/3a701addc2" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <span>Explanation</span>
+        <dl>
+          <dt>1.HTML Structure</dt>
+          <dd>* The HTML file includes a button and a paragraph element</dd>
+          <dd>* The JavaScript file (script.js) is linked in the HTML file</dd>
+          <dt>2.JavaScript Code</dt>
+          <dd><label>Selecting Elements:</label> The getElementById method is used to select the button and paragraph elements</dd>
+          <dd><label>Defining the Function:</label> The changeText function changes the text content of the paragraph</dd>
+          <dd><label>Adding the Event Listener:</label> The addEventListener method is used to attach the changeText function to the click event on the button</dd>
+       
+        </dl>
+        <span>Additional Notes</span>
+        <dl>
+          <dt>1.Event Types</dt>
+          <dd>You can use various event types with addEventListener, such as mouseover, keydown, submit, etc</dd>
+          <dt>2.Removing Event Listeners</dt>
+          <dd>You can remove an event listener using the removeEventListener method, which requires a reference to the same function used in addEventListener</dd>
+        </dl>
+        <div class="cmd">
+          // Add the event listener  <br>
+button.addEventListener('click', changeText); <br>
+<br>
+// Remove the event listener <br>
+button.removeEventListener('click', changeText); <br>
+        </div>
+
+
+      </div>
+
+      <div id="topic18" class="topic">
+     <h2>JavaScript object </h2>
+     <p>An object in JavaScript is made up of a set of properties, each of which has a key (also known as a property name) and a value. Values of all kinds, including texts, numbers, arrays, functions, and even other objects, can be stored in objects. They are essential to JavaScript because they make organized data processing and storing possible.</p>
+     <h2>Creating Objects</h2>
+     <span>1. Object Literal Notation</span>
+     <p>The most common way to create an object is by using object literal notation</p>
+     <iframe src="https://trinket.io/embed/html/241c4c832e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>2. Using the Object Constructor</span>
+     <p>You can also create an object using the Object constructor</p>
+     <iframe src="https://trinket.io/embed/html/c9cc5b8297" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>3. Using a Constructor Function</span>
+     <p>A constructor function allows for the creation of multiple instances of an object</p>
+     <iframe src="https://trinket.io/embed/html/a46e915e51" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>Working with Object Properties and Methods</h2>
+    <span>Adding and Modifying Properties</span>
+    <p>You can add or modify properties of an object at any time</p>
+    <iframe src="https://trinket.io/embed/html/c1aaa0f635" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>Deleting Properties</span>
+    <p>You can remove properties using the delete operator</p>
+    <iframe src="https://trinket.io/embed/html/19f571077d" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>Advanced Concepts</h2>
+    <span>Prototypes and Inheritance</span>
+    <p>JavaScript objects can inherit properties and methods from a prototype</p>
+    <iframe src="https://trinket.io/embed/html/ed711683cb" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>Example</span>
+    <iframe src="https://trinket.io/embed/html/a551b9aebb" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     
+
+       
+      </div>
+      <div id="topic19" class="topic">
+        <h2>Loops in JavaScript</h2>
+        <p>Loops are fundamental structures in programming that allow you to execute a block of code repeatedly based on a condition. In JavaScript, there are several types of loops, each with its own use cas</p>
+        <span>Types of Loops in JavaScript</span>
+        <p><label>for Loop:</label> Repeats a block of code a specified number of times <br>
+        <label> while Loop:</label> Repeats a block of code as long as a specified condition is true <br>
+        <label> do...while Loop:</label> Similar to the while loop, but it guarantees that the block of code runs at least once <br>
+        <label>for...in Loop:</label> Iterates over the properties of an object <br>
+        <label>for...of Loop:</label> Iterates over the values of an iterable object, such as an array</p>
+      <span>Example</span>
+      <iframe src="https://trinket.io/embed/html/2dd2e18ff4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Explanation</h2>
+      <dl>
+        <dt>1.for Loop</dt>
+        <dd>* Iterates from 1 to 5, creating a list item for each iteration</dd>
+        <dd>* Each list item is appended to the forLoop unordered list</dd>
+        <span>Example</span>
+        <div class="cmd">
+          for (initialization; condition; final-expression) { <br>
+            // code to be executed <br>
+        }
+        
+        </div>
+        <dt>2.while Loop</dt>
+        <dd>* Uses a counter (count) initialized to 1</dd>
+        <dd>* Continues to loop while count is less than or equal to 5, creating a list item for each iteration</dd>
+        <dd>* Each list item is appended to the whileLoop unordered list</dd>
+        <span>Example</span>
+        <div class="cmd">
+          while (count <= 5) { //condition<br>
+            console.log("Iteration " + count); //code to be executed<br>
+            count++; //Increment or Decrement<br>
+        }
+        </div>
+        <dt>3.do...while Loop</dt>
+        <dd>* Similar to the while loop but guarantees at least one execution</dd>
+        <dd>* Uses a counter (index) initialized to 1</dd>
+        <dd>* Each list item is appended to the doWhileLoop unordered list</dd>
+        <span>Example</span>
+        <div class="cmd">
+          do {<br>
+            // code to be executed<br>
+        } while (condition);<br>
+        
+        </div>
+        <dt>4.for...in Loop</dt>
+        <dd>* Iterates over the properties of an object (object)</dd>
+        <dd>* For each key in the object, a list item displaying the key and value is created and appended to the forInLoop unordered list</dd>
+        <span>Example</span>
+        <div class="cmd">
+          for (variable in object) {<br>
+            // code to be executed<br>
+        }<br>
+        
+        </div>
+        <dt>5.for...of Loop</dt>
+        <dd>* Iterates over the values of an array (array)</dd>
+        <dd>* For each value in the array, a list item displaying the value is created and appended to the forOfLoop unordered list</dd>
+        <span>Example</span>
+       <div class="cmd">
+        for (variable of iterable) { <br>
+          // code to be executed <br>
+      }
+      
+       </div>
+      </dl>
+
+
+
+      </div>
+      <div id="topic20" class="topic">
+    <h2>ColorFlipper</h2>
+    <iframe src="https://trinket.io/embed/html/a0b2b944ff" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+ 
+       
+      </div>
+      <div id="topic21" class="topic">
+        <h2>JavaScript functions</h2>
+        <p>Functions can be handled just like any other data type in JavaScript since they are first-class citizens. Functions can be defined in a variety of ways, each with its own use cases and syntax. These are the primary categories of JavaScript functions.</p>
+        <p>
+<label>Function Declaration:</label> The traditional way to define a function using the function keyword <br>
+<label>Function Expression:</label> Assigning a function to a variable <br>
+<label>Arrow Function Expression:</label> A concise way to define functions introduced in ES6
+        </p>
+        <iframe src="https://trinket.io/embed/html/d0121b4549" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <h2>Explanation</h2>
+        <span>1.Function Declaration</span>
+        <p>
+* The greet function is defined using the function keyword <br>
+* It takes one parameter name and returns a greeting message <br>
+*This type of function declaration is hoisted, meaning it can be called before it is declared in the code <br>
+        </p>
+        <span>2.Function Expression</span>
+        <p>
+* The add function is defined and assigned to a variable using a function expression<br>
+* It takes two parameters x and y and returns their sum<br>
+* Function expressions can be anonymous (like in this example) or named<br>
+        </p>
+        <span>3.Arrow Function Expression</span>
+        <p>
+* The multiply function is defined using the arrow function syntax (=>)<br>
+* It takes two parameters x and y and returns their product<br>
+* Arrow functions are more concise than traditional function expressions and lexically bind the this value
+        </p>
+
+
+      </div>
+      <div id="topic22" class="topic">
+        <h2>JavaScript callback</h2>
+        <p>A callback is a function in JavaScript that is called after an operation has finished and is supplied as an argument to another function. Asynchronous tasks like reading files, sending HTTP requests, and managing events are handled using callbacks.</p>
+        <span>Explanation</span>
+        <p>A callback function is a function that is called back (called in) to perform an action or procedure inside of another function after being supplied as an argument to that other function. This is frequently used in asynchronous programming to provide non-blocking function execution.</p>
+        <h2>Example</h2>
+        <p>simple example of how callbacks work in JavaScript</p>
+        <iframe src="https://trinket.io/embed/html/91b07414da" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <p>In this example, the greet function takes two arguments: a name (string) and a callback function. After logging the greeting message, it calls the callback function, which logs "Goodbye!"</p>
+        <h2>Example with Asynchronous Operation</h2>
+        <iframe src="https://trinket.io/embed/html/0d8f6393a6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+       
+      </div>
+      <div id="topic23" class="topic">
+        <h2>forEach</h2>
+        <p>JavaScript's forEach method is used to run a given function once for each element in an array. It is a practical method for iterating across arrays and handling each element individually</p>
+        <h2>Explanation</h2>
+        <p>An argument to the forEach method is a callback function. Every element in the array undergoes execution of this callback function. Three arguments are maximum for the callback function to accept</p>
+        <dl>
+          <dt>1.Current value</dt>
+          <dd>* The current element being processed in the array</dd>
+          <dt>2.Index (optional)</dt>
+          <dd>* The index of the current element being processed in the array</dd>
+          <dt>3.Array (optional)</dt>
+          <dd>*  The array forEach was called upon</dd>
+
+        </dl>
+        <span>Syntax</span>
+        <div class="cmd"><br>
+          array.<span1 style="color: red;">forEach</span1>(<span1 style="color: blue;">function</span1>(currentValue, index, array) { <br>
+    // Perform some operation on currentValue <br>
+}); <br>
+        </div>
+        <span>Example</span>
+        <p>Here is a basic example of using forEach to print each element of an array</p>
+        <div class="cmd"><br>
+          <span1 style="color: blue;">let</span1> numbers = [1, 2, 3, 4, 5];<br>
+
+numbers.<span1 style="color: red;">forEach</span1>(<span1 style="color: blue;">function</span1>(number) {<br>
+    console.log(number);<br>
+});<br>
+
+        </div>
+      <span>Example with Index and Array</span>
+      <p>You can also use the index and array parameters in the callback function</p>
+      <div class="cmd"><br>
+        <span1 style="color: blue;">let</span1> fruits = ['apple', 'banana', 'cherry'];<br>
+
+fruits.<span1 style="color: red;">forEach</span1>(<span1 style="color: blue;">function</span1>(fruit, index, array) {<br>
+    <span1 style="color: rgb(241, 99, 43);">console.log</span1>('Fruit: ' + fruit);<br>
+    <span1 style="color: rgb(241, 99, 43);">console.log</span1>('Index: ' + index);<br>
+    <span1 style="color: rgb(241, 99, 43);">console.log</span1>('Array: ' + array);<br>
+});<br>
+
+      </div>
+      <span>This will output</span>
+      <div class="cmd"><br>
+        Fruit: apple<br>
+Index: 0<br>
+Array: apple,banana,cherry<br>
+Fruit: banana<br>
+Index: 1<br>
+Array: apple,banana,cherry<br>
+Fruit: cherry<br>
+Index: 2<br>
+Array: apple,banana,cherry<br>
+
+      </div>
+    <span>Example with Arrow Function</span>
+    <p>Using an arrow function makes the syntax more concise</p>
+    <div class="cmd"><br>
+      <span1 style="color: blue;">let</span1>  colors = ['red', 'green', 'blue'];<br>
+
+colors.<span1 style="color: red;">forEach</span1>(color => <span1 style="color: rgb(241, 99, 43);">console.log</span1>(color));<br>
+
+    </div>
+
+
+      </div>
+      <div id="topic24" class="topic">
+        <h2>1.map</h2>
+        <p>The map method creates a new array populated with the results of calling a provided function on every element in the calling array</p>
+        <span>Syntax</span>
+        <div class="cmd"><br>
+          <span1 style="color:blue;">let</span1> newArray = array. <span1 style="color:rgb(241, 99, 43);">map</span1> ( <span1 style="color:blue;">function</span1> (currentValue, index, array) {<br>
+            // Return element for newArray<br>
+        });<br>
+        
+        </div>
+        <span>Example</span>
+        <div class="cmd"><br>
+          <span1 style="color:blue;">let</span1> numbers = [1, 2, 3, 4, 5];<br>
+          <span1 style="color:blue;">let</span1> doubled = numbers.<span1 style="color:rgb(241, 99, 43);">map</span1>(<span1 style="color:blue;">function</span1>(number) {<br>
+            <span1 style="color:blue;">let</span1> number * 2;<br>
+});
+<span1 style="color: rgb(241, 99, 43);">console.log</span1>(doubled); // Output: [2, 4, 6, 8, 10]<br>
+
+        </div>
+        <h2>2. filter</h2>
+        <p>The filter method creates a new array with all elements that pass the test implemented by the provided function</p>
+        <span>Syntax</span>
+        <div class="cmd"><br>
+          <span1 style="color:blue;">let</span1> newArray = array.filter( <span1 style="color:blue;">function</span1>(currentValue, index, array) {<br>
+            // Return true to keep the element, false otherwise<br>
+        });<br>
+        
+        </div>
+        <span>Example</span>
+        <div class="cmd"><br>
+          <span1 style="color:blue;">let</span1> numbers = [1, 2, 3, 4, 5];<br>
+          <span1 style="color:blue;">let</span1> evenNumbers = numbers.filter(<span1 style="color:blue;">function/span1>(number) {<br>
+    return number % 2 === 0;<br>
+});<br>
+<span1 style="color: rgb(241, 99, 43);">console.log</span1>(evenNumbers); // Output: [2, 4]<br>
+
+        </div>
+      <span>Using an arrow function</span>
+      <div class="cmd"><br>
+        <span1 style="color: blue;">let</span1> evenNumbers = numbers.filter(number => number % 2 === 0);<br>
+        <span1 style="color: rgb(241, 99, 43);">console.log</span1>(evenNumbers); // Output: [2, 4]<br>
+
+      </div>
+    <h2>3. reduce</h2>
+    <p>The reduce method executes a reducer function (that you provide) on each element of the array, resulting in a single output value</p>
+    <span>Syntax</span>
+    <div class="cmd"><br>
+      <span1 style="color: blue;">let</span1> result = array.reduce(<span1 style="color: blue;">function</span1>(accumulator, currentValue, index, array) {<br>
+        // Return the new accumulator value<br>
+    }, initialValue);<br>
+    
+    </div>
+    <span>Example</span>
+    <div class="cmd"><br>
+      <span1 style="color: blue;">let</span1> numbers = [1, 2, 3, 4, 5];<br>
+      <span1 style="color: blue;">let</span1> sum = numbers.reduce( <span1 style="color: blue;">function</span1>(accumulator, currentValue) {<br>
+    return accumulator + currentValue;<br>
+}, 0);<br>
+<span1 style="color: rgb(241, 99, 43);">console.log</span1>(sum); // Output: 15<br>
+
+    </div>
+
+
+
+       
+      </div>
+      <div id="topic25" class="topic">
+        <h2>Closures and Returning Functions in JavaScript</h2>
+        <p>A closure in JavaScript is a function that has access to the outer (enclosing) function’s variables even after the outer function has returned. Closures are created whenever a function is created within another function, giving the inner function access to the outer function’s scope</p>
+        <h2>Returning Functions</h2>
+        <p>Returning a function from another function is a common way to create closures. This technique can be used for things like creating factory functions, maintaining state, or currying</p>
+        <span>Example</span>
+        <iframe src="https://trinket.io/embed/html/ada22f0322?runMode=run" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <span>How It Works</span>
+      <p>* When createCounter is called, it creates a new scope with a count variable <br>
+        * The returned object contains methods that close over the count variable, allowing them to access and modify it even after createCounter has finished executing <br>
+        * Clicking the "Increment" button calls the increment method, increasing the count <br>
+        * Clicking the "Show Count" button calls the getCount method, displaying the current count</p>
+      
+
+
+       
+      </div>
+      <div id="topic26" class="topic">
+      <h2>Memory allocation in JavaScript</h2>
+      <p>The process of allocating and releasing memory for variables, objects, and data structures is known as memory allocation in JavaScript. JavaScript uses a method known as garbage collection to automatically manage memory. This indicates that memory is automatically allocated by the JavaScript engine when variables are created and released when they are no longer required</p>
+      <span>Key Concepts</span>
+      <dl>
+        <dt>1.Heap and Stack Memory</dt>
+        <dd><label>Heap Memory:</label> This is used for objects and dynamic memory allocation. It is managed through garbage collection</dd>
+        <dd><label>Stack Memory:</label> This is used for function calls and primitive values. It has a Last In First Out (LIFO) structure and is managed automatically</dd>
+        <dt>2.Garbage Collection</dt>
+        <dd>JavaScript uses a garbage collector to find and reclaim memory that is no longer in use. The most common algorithm used is the Mark-and-Sweep algorithm</dd>
+        <dt>3.Memory Leaks</dt>
+        <dd>Memory leaks occur when allocated memory is not properly released, leading to increased memory usage and potential performance issues</dd>
+      </dl>
+      <span>Example Code</span>
+      <iframe src="https://trinket.io/embed/html/c1d4fdbf82" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+      </div>
+      <div id="topic27" class="topic">
+        <h2>object-oriented programming (OOP) language JS</h2>
+        <p>JavaScript is an object-oriented programming (OOP) language, which means it supports concepts such as objects, classes, inheritance, encapsulation, and polymorphism. Below, I'll explain these concepts and provide example code to illustrate how they work in JavaScript</p>
+        <span>Key Concepts of OOP in JavaScript</span>
+        <p>
+<label>Objects:</label> Objects are collections of properties and methods. Properties are values associated with the object, and methods are functions that operate on the properties <br>
+<br>
+<label></label> Classes are blueprints for creating objects. They define the properties and methods that the objects created from the class will have<br>
+<br>
+<label>Inheritance:</label> Inheritance allows a class to inherit properties and methods from another class, promoting code reuse<br>
+<br>
+<label>Encapsulation:</label> Encapsulation involves bundling the data (properties) and methods that operate on the data into a single unit or class. It also restricts direct access to some of an object's components, which is a means of preventing unintended interference and misuse<br>
+<br>
+<label>Polymorphism:</label> Polymorphism allows objects to be treated as instances of their parent class rather than their actual class. It enables a single interface to control access to a general class of actions<br>
+        </p>
+      <span>Example Code</span>
+      <iframe src="https://trinket.io/embed/html/3e918ff70b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      
+      </div>
+      <div id="topic28" class="topic">
+        <h2>JavaScript error handling</h2>
+        <p>Managing errors in JavaScript is a crucial part of developing dependable programs. It gives developers the ability to foresee and control failures, allowing them to handle exceptions gracefully and prevent program crashes. The try...catch statement serves as JavaScript's main error management mechanism.</p>
+        <span>Key Concepts of Error Handling in JavaScript</span>
+        <dl>
+          <dt>try...catch Statement</dt>
+          <dd>This construct allows you to test a block of code for errors (try) and handle the error if it occurs (catch)</dd>
+          <dt>throw Statement</dt>
+          <dd>This allows you to create custom errors</dd>
+          <dt>finally Block</dt>
+          <dd>his block can be used to execute code after the try and catch blocks, regardless of whether an error occurred</dd>
+        </dl>
+        <h2>Example Code</h2>
+        <iframe src="https://trinket.io/embed/html/9ead5ac340" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+ 
+      </div>
+      <div id="topic29" class="topic">
+        <h2>JavaScript Object Notation</h2>
+        <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is commonly used for transmitting data in web applications between a server and a client</p>
+        <span>Key Characteristics of JSON</span>
+        <p>
+<label>Data Representation:</label> JSON represents data as key-value pairs <br>
+<label>Types:</label> Supports strings, numbers, booleans, arrays, objects, and null <br>
+<label>Syntax:</label> <br>
+ * Objects are enclosed in {} and contain key-value pairs <br>
+ * Arrays are enclosed in [] and contain a list of values <br>
+ * Keys are strings and must be enclosed in double quotes <br>
+ * Values can be strings, numbers, booleans, arrays, objects, or null <br>
+        </p>
+        <h2>Example of JSON</h2>
+        <iframe src="https://trinket.io/embed/html/9c345ebd20" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <span>Parsing JSON</span>
+        <iframe src="https://trinket.io/embed/html/4eb9966b10" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <span>Stringifying JavaScript Object</span>
+        <iframe src="https://trinket.io/embed/html/5c4b36b072" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <h2>Example Code Using JSON in an HTML Page</h2>
+        <iframe src="https://trinket.io/embed/html/93c77d311a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>     
+       
+      </div>
+      <div id="topic30" class="topic">
+      <h2>Digital Clock</h2>
+      <iframe src="https://trinket.io/embed/html/b409c0ee2e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       
+      </div>
+      
+      
+      
+  </div>
+  <style>
+
+    /*  content code */
+    .topic{
+      font-size:medium;
+      text-transform: lowercase;
+    }
+    .content h2{
+      font-size:30px;
+      padding:20px;
+      text-transform: capitalize;
+    }
+    .content p{
+      padding:20px;
+      line-height: 20px;
+      font-size:20px;
+      text-transform: lowercase;
+    }
+    span{
+      font-weight:bold;
+      font-size: 20px;
+      padding:20px;
+
+    }
+   dt{
+    padding: 20px;
+    font-size:20px;
+    font-weight: bold;
+   }
+   dd{
+    line-height:20px;
+    font-size:20px;
+   }
+  .cmd{
+    margin-left:7%;
+    padding:20px;
+    line-height: 26px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+  }
+label{
+    font-weight: bold;
+    padding: 20px;
+    font-size: medium;
+}
+
+
+
+    /* finished content code */
+
+
+
+
+
+
+        *{
+        text-transform: capitalize;
+       
+    }
+
+ #leftMenu button{
+margin-bottom:12px;
+ }
+  
+    
+    nav{
+        width:15%;
+        float: left;
+        background-color: rgb(139, 139, 137);
+        position: fixed;
+        overflow-y:auto ;
+        height:81%;
+        padding-left:29px ;
+        font-size:medium;
+        margin: 0;
+        border-radius: 10px;
+    }
+    .bottomnav a li{ 
+      padding:43px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    
+    }
+    #closeMenuBtn{
+      margin-left: 10px; 
+      margin-top: 20px;
+    }
+
+    
+    pre{
+        width: 30%;
+    }
+    
+    h3{
+        color: green;
+        padding: 10px;
+    }
+    nav a{
+        text-decoration:none;
+        font-size: medium;
+        
+    }
+    nav a:hover{
+        background-color: rgb(224, 217, 217);
+      
+       
+    }
+    nav a:active{
+      color: green;
+    }
+    .content{
+        width:80%;
+        float:right;
+        padding:5px;
+        margin-right:16%;
+        background-color: white;
+    }
+    
+    ul button{
+        padding:10px 20px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        background-color: green;
+        cursor: pointer;
+
+    }
+.topic {
+  display: none;
+}
+.topic.active {
+  display: block;
+}
+
+/* responsible */
+@media(max-width:500px){
+  nav{
+        padding: 15px;
+        width:30%;
+        float: left;
+        background-color: rgb(139, 139, 137);
+        position: fixed;
+        overflow-y:auto ;
+        height:80%;
+        padding-left:10px ;
+        font-size: x-small;
+        line-height:3px;
+    }
+    .bottomnav a li{
+      padding:3px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    iframe{
+     width: 100%;
+     height: 400;
+     padding: 10px;
+     padding-left: 0;
+     padding-right: 0;
+    }
+    .content h2{
+      font-size:medium;
+      padding: 10px;
+      text-transform: capitalize;
+    }
+    .content p{
+      padding: 5px;
+      line-height: 20px;
+      font-size:x-small;
+      text-transform: lowercase;
+    }
+    dt{
+    padding: 10px;
+    font-weight:14px;
+    font-size:medium;
+   }
+   span{
+    font-size:medium ;
+   }
+   dd{
+    line-height:30px;
+    font-size:x-small;
+   }
+    h3{
+        color: green;
+        padding: 10px;
+        font-size: medium;
+    }
+    nav a{
+        text-decoration:none;
+        
+        
+    }
+    nav a:hover{
+        background-color: rgb(224, 217, 217);
+       
+    }
+    .content{
+      width:97%;
+        float:right;
+        padding: 5px;
+        margin: 0;
+    }
+    a button{
+        padding:5px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        background-color: green;
+        cursor: pointer;
+        border-radius: 10px;
+
+    }
+.topic {
+  display: none;
+}
+.topic.active {
+  display: block;
+}
+
+}
+
+/* responsible code finished */
+
+
+/* content code */
+
+.topic{
+      font-size: small;
+      text-transform: lowercase;
+    }
+    .content h2{
+      padding: 10px;
+    }
+    .content p{
+      padding: 10px;
+    }
+
+
+/* finised code */
+
+
+  </style>
+  </style>
+<script>
+
+  
+function showTopic(topicId) {
+// Hide all topics
+var topics = document.querySelectorAll('.topic');
+topics.forEach(function(topic) {
+  topic.classList.remove('active');
+});
+
+
+// Show the selected topic
+var selectedTopic = document.getElementById(topicId);
+selectedTopic.classList.add('active').close();
+}
+
+
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const leftMenu = document.getElementById('leftMenu');
+
+    openMenuBtn.addEventListener('click', () => {
+        leftMenu.style.left = '0';
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+        leftMenu.style.left = '-200px';
+    });
+
+</script>
+
+
+<!--finish center of the code-->
+
+
+
+    <!--footer code-->
+
+   
+</body>
+</html>
+<script>
+  function darkmood(){
+    let body=document.getElementById("body").style.backgroundColor="black";
+    let color=document.getElementById("body").style.color="white";
+    let head=document.getElementById("header").style.color="black";
+  }
+</script>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

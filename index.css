@@ -1,0 +1,320 @@
+*{
+    text-transform: capitalize;
+    margin: 0;
+}
+
+   body{
+      background-color: darkgray;
+         
+     }
+     header{
+         background-color: green;
+         cursor: pointer;
+         display: flex;
+         justify-content: space-between;
+         padding: 10px;
+     }
+     header ul li{
+         display: inline-block;
+         padding: 10px;
+         color: white;
+         letter-spacing:3px;
+     }
+     .search input{
+     padding: 10px;
+     border-radius: 30px;
+     }
+     .darkmood button{
+         margin-top: 6px;
+         border-radius:10px;
+         border: 1px solid white;
+         color: rgb(250, 250, 250);
+         cursor: pointer;
+         background-color: black;
+         transition: 0.5s;
+     }
+     .darkmood button:hover{
+        color: black;
+        transition: 0.5s;
+     }
+     .login h2{
+         margin-top: 6px;
+     }
+     header hr{
+         padding: 10px;
+     }
+     blue{
+        color:blue;
+     }
+     red{
+        color: red;
+     }
+     green{
+        color: green;
+     }
+     merun{
+        color: rgb(231, 13, 133);
+     }
+      /* bottom nav code */
+     
+      .bottomnav{
+         background-color: rgb(99, 94, 94);
+         color: white;
+         cursor: pointer;
+      }
+      .bottomnav a{
+         color: white;
+      }
+      .bottomnav a:hover{
+         color:green;
+      }
+      .bottomnav  ul li{
+         display: inline-block;
+        padding:6%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+         text-transform: capitalize;
+         transition: 0.2s;
+      }
+      .bottomnav ul li:hover{
+         background-color: rgb(70, 64, 64);
+         transition: 0.2s;
+      }
+      
+      
+      .center{
+         margin-left: 20%;
+         margin-top: 7%;
+      }
+      .center img{
+         
+             width: 20%;
+      }
+      .center h3{
+         font-size:100px;
+         margin-left: 15%;
+      } 
+      .center p{
+         font-size: medium;
+         color: rgb(219, 19, 19);
+         font-weight: bold;
+         margin-left: 30%;
+      }
+      .intro{
+         padding: 30px;
+         padding-left: 40%;
+         height: 70%;
+      }
+      .intro h1{
+         padding: 10px;
+         font-size: 40px;
+         margin: 10px;
+         letter-spacing:20px;
+      }
+      .intro p{
+         padding: 10px;
+         margin: 10px;
+         font-size:medium;
+     
+      }
+     
+      /* html home css code */
+      nav{
+        width:18%;
+        float: left;
+        background-color: rgb(139, 139, 137);
+     }
+     nav a{
+        text-decoration:none;
+        line-height: 26px;
+     }
+     .content{
+        width: 76%;
+        float:right;
+     }
+     .topic {
+     display: none;
+     }
+     .topic.active {
+     display: block;
+     }
+     footer{
+        background-color: rgb(77, 75, 75);
+        margin-top: 7%;
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+     }
+     footer h4{
+        
+        font-size: medium;
+     }
+     footer a{
+        text-decoration:none;
+        color: white;
+        font-size: medium;
+     }
+     footer ul a li{
+       line-height:33px;
+       
+     }
+
+     
+
+
+/* responsible */
+
+@media screen and (max-width:600px){
+   header{
+      background-color: green;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      padding:4px;
+  }
+  header ul li{
+      display: inline-block;
+      padding: 10px;
+  }
+ .search{
+   display: none;
+ }
+ .darkmood{
+   display: none;
+ }
+  header hr{
+      padding: 10px;
+  }
+   /* bottom nav code */
+  
+   .bottomnav{
+      background-color: rgb(99, 94, 94);
+      color: white;
+      cursor: pointer;
+   }
+   .bottomnav a{
+      color: white;
+   }
+   .bottomnav a:hover{
+      color:green;
+   }
+   .bottomnav  ul li{
+      display: inline-block;
+      font-size:small;
+      padding:2%;
+      text-transform: capitalize;
+      transition: 0.2s;
+      margin: 5px;
+   }
+   .bottomnav ul li:hover{
+      background-color: rgb(70, 64, 64);
+      transition: 0.2s;
+   }
+   
+   
+   .center{
+      margin: left 8%;
+      margin-top: 7%;
+   }
+   .center img{
+      
+          width: 20%;
+   }
+   .center h3{
+      font-size:20px;
+      margin-left: 3%;
+      letter-spacing: 13px;
+      margin: 10px;
+   } 
+   .center p{
+      font-size: medium;
+      color: rgb(219, 19, 19);
+      font-weight: bold;
+      margin-left: 3%;
+   }
+   .intro{
+      padding: 20px;
+      padding-left:20%;
+   }
+   .intro h1{
+      padding: 10px;
+      font-size: 40px;
+      letter-spacing:15px;
+   }
+   .intro p{
+      padding: 10px;
+  
+   }
+   span{
+      font-size: medium;
+   }
+
+   footer{
+      background-color: rgb(77, 75, 75);
+      margin-top: 7%;
+      padding: 17px;
+      display: flex;
+      justify-content: space-between;
+   }
+   footer h4{
+      margin-right:20px;
+      font-size: x-small;
+   }
+   footer a{
+      text-decoration:none;
+      color: white;
+      font-size: x-small;
+      margin-left: 10px;
+   }
+   footer ul li{
+     line-height: 20px;
+   }
+
+
+
+
+
+
+
+}
+   
+
+
+ footer{
+  
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(77, 75, 75);
+  font-size: x-small;
+}
+
+footer a{
+   text-decoration:none;
+   color: white;
+}
+  
+
+
+ /* footer code */
+
+
+ footer{
+    background-color: rgb(77, 75, 75);
+    margin-top: 7%;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+ }
+ footer h4{
+    margin-right:20px;
+    font-size: x-small;
+ }
+ footer a{
+    text-decoration:none;
+    color: white;
+    font-size: x-small;
+    margin-left: 10px;
+ }
+ footer ul li{
+   line-height: 20px;
+ }

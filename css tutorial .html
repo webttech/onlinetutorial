@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<header id="header">
+   
+</header>
+<hr>
+<body id="body">
+    <div class="bottomnav">
+<ul>
+    <a href="#"> <li><button id="openMenuBtn">Open Menu</button></li></a>
+    <a href="html.html"><li>HTML</li></a>
+    <a href="java script.html"> <LI>JAVASCRIPT</LI></a>
+   
+    
+   
+</ul>
+    </div>
+
+<!--center of the code-->
+
+
+
+ <!--html tutorial -->
+ <nav  class="menu-bar" id="leftMenu"> 
+   <button id="closeMenuBtn">Close Menu</button>
+    <h3>CSS Tutorial</h3>
+    <a href="#" onclick="showTopic('topic1')">css Introduction</a><br>
+    <a href="#" onclick="showTopic('topic2')">colors in css</a><br>
+    <a href="#" onclick="showTopic('topic3')">text in css</a><br>
+    <a href="#" onclick="showTopic('topic4')">boxes in css</a><br>
+    <a href="#" onclick="showTopic('topic5')">styling lists and tabels</a><br>
+    <a href="#" onclick="showTopic('topic6')">styling forms</a><br>
+    <a href="#" onclick="showTopic('topic7')">position in css</a><br>
+    <a href="#" onclick="showTopic('topic8')">media queries</a><br>
+    <a href="#" onclick="showTopic('topic9')">gradient in css</a><br>
+    <a href="#" onclick="showTopic('topic10')">em,rem,vh,vw,in css</a><br>
+    <a href="#" onclick="showTopic('topic11')">HTML 5 layout</a><br>
+    <a href="#" onclick="showTopic('topic12')">flexbox</a><br>
+    <a href="#" onclick="showTopic('topic13')">grid</a><br>
+    <a href="#" onclick="showTopic('topic14')">transition in css</a><br>
+    <a href="#" onclick="showTopic('topic15')">animation in css</a><br>
+    <a href="#" onclick="showTopic('topic16')">z-index in css</a><br>
+    <a href="#" onclick="showTopic('topic17')">HTML Video</a><br>
+   
+   
+   
+
+  </nav>
+  
+  <div class="content">
+       <br>
+      <br>
+      <br>
+    <div id="topic1" class="topic active">
+      <br>
+      <br>
+      <br>
+      <br>
+       <h2> introduction</h2>
+       <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS defines how HTML elements should be displayed on screen, paper, or in other media. It allows web developers to separate content (HTML) from design (CSS), enabling more flexibility and control in the specification of presentation characteristics</p>
+       <h2>Key Concepts of CSS</h2>
+       <span>1.Selectors</span>
+       <p>These are used to target HTML elements that you want to style. Common selectors include element selectors, class selectors, and ID selectors</p>
+       <span>2.Properties</span>
+       <p>These define the aspects of the HTML elements you want to change (e.g., color, font-size, margin)</p>
+       <span>3.Values</span>
+       <p>These are the settings you apply to properties (e.g., red, 16px, 20px)</p>
+      <h2>Basic Structure of CSS</h2>
+      <iframe src="https://trinket.io/embed/html/7c0ff92a69" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Example of CSS</h2>
+      <span>HTML File (index.html)</span>
+      <iframe src="https://trinket.io/embed/html/a719c91a4a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <span>CSS File (styles.css)</span>
+      <iframe src="https://trinket.io/embed/html/a7b3e6ef11" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <span>combined example</span>
+      <iframe src="https://trinket.io/embed/html/d233ad371b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>Explanation</h2>
+       <dl>
+        <dt>1.Element Selector (h1)</dt>
+        <dd>* Targets all &lt;h1&gt; elements</dd>
+        <dd>* Sets the text color to blue, font family to Arial or sans-serif as fallback, and centers the text</dd>
+        <dt>2.ID Selector (#intro)</dt>
+        <dd>* Targets the element with the id "intro"</dd>
+        <dd>* Sets the text color to green and font size to 18 pixels</dd>
+        <dt>3.Class Selector (.header)</dt>
+        <dd>* Targets all elements with the class "header"</dd>
+        <dd>* Converts text to uppercase, adds a black bottom border, and adds padding to the bottom of the element</dd>
+        <dt>4.Universal Selector (*)</dt>
+        <dd>* Targets all elements on the page</dd>
+        <dd>* Removes default margin and padding, and sets the box-sizing property to border-box for better control of element dimensions</dd>
+    </dl>
+        <h2>Conclusion</h2>
+        <p>CSS provides a powerful way to control the visual appearance of web pages, allowing for a clean separation of structure and presentation. By learning to use CSS effectively, you can create visually appealing and responsive websites</p>
+    </div>
+    
+    <div id="topic2" class="topic">
+    <h2>colors</h2>
+    <p>CSS (Cascading Style Sheets) provides a variety of ways to specify colors for web design. Below are the different ways to define colors in CSS, along with examples for each method</p>
+    <span>1. Named Colors</span>
+    <p>CSS includes a list of 140 named colors, such as red, blue, green, etc</p>
+    <iframe src="https://trinket.io/embed/html/ac763bbfc9" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>2. Hexadecimal Colors</span>
+    <p>Colors can be specified using hexadecimal values, in the format #RRGGBB</p>
+    <iframe src="https://trinket.io/embed/html/873b452e68" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+    <span>3. RGB Colors</span>
+    <p>Colors can be defined using the rgb function, which takes three values: red, green, and blue</p>
+    <iframe src="https://trinket.io/embed/html/c3e463700c" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>4. RGBA Colors</span>
+    <p>The rgba function is similar to rgb, but includes an alpha channel for opacity</p>
+    <iframe src="https://trinket.io/embed/html/ba30055ff5" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>5. HSL Colors</span>
+    <p>The hsl function defines colors using the Hue, Saturation, and Lightness model</p>
+    <iframe src="https://trinket.io/embed/html/90b6e9df17" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>6. HSLA Colors</span>
+    <p>The hsla function adds an alpha channel to hsl colors</p>
+    <iframe src="https://trinket.io/embed/html/fc488d8a6e" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>7. CSS Custom Properties (Variables)</span>
+    <p>CSS custom properties allow you to define reusable color variables</p>
+    <iframe src="https://trinket.io/embed/html/8f997821e4" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>8. CurrentColor Keyword</span>
+    <p>The currentColor keyword applies the current color of an element to its children or other properties</p>
+    <iframe src="https://trinket.io/embed/html/9590567d05" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>9. Transparent Keyword</span>
+    <p>The transparent keyword is used to make an element completely transparent</p>
+    <iframe src="https://trinket.io/embed/html/e91bb49108" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+    <h2>Example Code Combining Different Methods</h2>
+    <iframe src="https://trinket.io/embed/html/4feff7bc49" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+      
+
+    </div>
+
+    <div id="topic3" class="topic">
+    <h2>text in CSS</h2>   
+    <p>CSS provides a variety of properties to style text on a web page. These properties allow you to control the font, size, spacing, alignment, decoration, and other aspects of the text. Below is an explanation of the main CSS text properties with examples</p>
+    <span>1. color</span>
+    <p>Sets the color of the text</p>
+    <div class="cmd">
+      p { <br>
+        color: blue;<br>
+    }
+    </div>  
+    <span>2. font-family</span>
+    <p>Specifies the font of the text. You can list multiple fonts as fallbacks</p>
+    <div class="cmd">
+      body {<br>
+        font-family: Arial, Helvetica, sans-serif;<br>
+    }
+    </div>
+  <span>3. font-size</span>
+  <p>Sets the size of the text</p>
+  <div class="cmd">
+    h1 { <br>
+      font-size: 2em; <br>
+  }
+  </div>
+<span>4. font-weight</span>
+<p>Specifies the weight (or boldness) of the text</p>
+<div class="cmd">
+  strong { <br>
+    font-weight: bold; <br>
+} <br>
+
+.light-text { <br>
+    font-weight: 300; <br>
+}
+</div>
+<span>5. font-style</span>
+<p>Specifies the style of the text (e.g., normal, italic, oblique)</p>
+<div class="cmd">
+  em { <br>
+    font-style: italic; <br>
+} <br>
+</div>
+<span>6. text-align</span>
+<p>Specifies the horizontal alignment of the text</p>
+<div class="cmd">
+  h1 {<br>
+    text-align: center;<br>
+}<br>
+
+p {<br>
+    text-align: justify;<br>
+}<br>
+</div>
+<span>7. text-decoration</span>
+<p>Adds decoration to the text (e.g., underline, overline, line-through, none)</p>
+<div class="cmd">
+  a {<br>
+    text-decoration: none;<br>
+}<br>
+
+del {<br>
+    text-decoration: line-through;<br>
+}<br>
+</div>
+<span>8. text-transform</span>
+<p>Controls the capitalization of the text</p>
+<div class="cmd">
+  h2 {<br>
+    text-transform: uppercase;<br>
+}<br>
+
+.address {<br>
+    text-transform: capitalize;<br>
+}<br>
+</div>
+<span>9. letter-spacing</span>
+<p>Adjusts the space between characters</p>
+<div class="cmd">
+  h1 { <br>
+    letter-spacing: 2px;<br>
+}
+
+</div>
+<span>10. line-height</span>
+<p>Sets the height of the lines of text</p>
+<div class="cmd">
+  p { <br>
+    line-height: 1.5; <br>
+}
+</div>
+<span>11. word-spacing</span>
+<p>Adjusts the space between words</p>
+<div class="cmd">
+  p { <br>
+    word-spacing: 5px; <br>
+}
+</div>
+<span>12. text-indent</span>
+<p>Indents the first line of the text block</p>
+<div class="cmd">
+  p { <br>
+    text-indent: 50px; <br>
+}
+</div>
+<span>13. white-space</span>
+<p>Controls how whitespace inside an element is handled</p>
+<div class="cmd">
+  pre { <br>
+    white-space: pre; /* Preserves whitespace and line breaks */ <br>
+}
+
+</div>
+<h2>Example Code Combining Different Text Properties</h2>
+<iframe src="https://trinket.io/embed/html/84847a9eaf" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+    <div id="topic4" class="topic">
+     <h2>boxes in css</h2>
+     <p>CSS offers a variety of properties to style boxes, which are the fundamental building blocks for web design. These properties control the layout, appearance, and behavior of elements on the page. Below is an explanation of the key CSS box properties along with examples</p>
+     <span>1. width and height</span>
+     <p>Set the width and height of an element</p>
+     <iframe src="https://trinket.io/embed/html/35f1017660" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>Example Code Demonstrating Different Width and Height Settings</span>
+     <iframe src="https://trinket.io/embed/html/8c668b8136" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>2. padding</span>
+     <p>Adds space inside the element, between the content and the border</p>
+     <iframe src="https://trinket.io/embed/html/c650145f79" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>Example Code Demonstrating Different Padding Settings</span>
+     <iframe src="https://trinket.io/embed/html/bf3555f0f5" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>3. margin</span>
+     <p>Adds space outside the element, between the border and surrounding elements</p>
+     <iframe src="https://trinket.io/embed/html/e9e18ea352" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>Example Code Demonstrating Different Margin Settings</span>
+     <iframe src="https://trinket.io/embed/html/4fc93309ec" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>4. border</span>
+     <p>Defines the border around the element. You can specify the width, style, and color</p>
+     <iframe src="https://trinket.io/embed/html/b58a6d85af" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>Example Code Demonstrating Different Border Sizes</span>
+     <iframe src="https://trinket.io/embed/html/0c3a45193e" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>5. background-color</span>
+     <p>Sets the background color of the element</p>
+     <iframe src="https://trinket.io/embed/html/37d23200c6" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>Example Code Demonstrating Different Background Colors</span>
+     <iframe src="https://trinket.io/embed/html/725f298be4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>6. box-shadow</span>
+     <p>Adds a shadow to the element</p>
+     <iframe src="https://trinket.io/embed/html/a74912125c" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>Example Code Demonstrating Different Box Shadows</span>
+     <iframe src="https://trinket.io/embed/html/237a6f7813" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>7. border-radius</span>
+     <p>Rounds the corners of the element's border</p>
+     <iframe src="https://trinket.io/embed/html/485daae86d" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>Example Code Demonstrating Different Border Radii</span>
+     <iframe src="https://trinket.io/embed/html/8df2e339f9" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>8. display</span>
+     <p>Specifies the display behavior of an element</p>
+     <iframe src="https://trinket.io/embed/html/c55bf09eea" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>Example Code Demonstrating Different Display Properties</span>
+     <iframe src="https://trinket.io/embed/html/3d721586e4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>9. position</span>
+     <p>Specifies the positioning method used for an element (static, relative, absolute, fixed, sticky).</p>
+     <iframe src="https://trinket.io/embed/html/e9e3dde87b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>Example Code Demonstrating Different Position Values</span>
+     <iframe src="https://trinket.io/embed/html/2ac4aa0aba" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>10. overflow</span>
+     <p>Controls what happens when content overflows the element's box (visible, hidden, scroll, auto)</p>
+     <iframe src="https://trinket.io/embed/html/c0b048974b" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+    </div>
+
+
+    <div id="topic5" class="topic">
+     <h2>list in CSS</h2>
+     <p>Styling lists in CSS involves applying styles to both ordered (&lt;ol&gt;) and unordered (&lt;ul&gt;) lists, as well as their list items (<li>). Below are explanations and examples demonstrating different ways to style lists</p>
+      <span>Example Code Demonstrating Styling Lists</span>
+      <iframe src="https://trinket.io/embed/html/106c6af307" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Explanation of the Example Code</h2>
+      <dl>
+        <dt>1.Basic Styles for All Lists</dt>
+        <dd>* Sets the margin and padding for all &lt;ul&gt; and &lt;ol&gt; elements</dd>
+        <dd>list-style-position: inside; ensures the bullet or number is inside the list item</dd>
+        <dt>2.Unordered List Styles</dt>
+        <dd>unordered-list: Uses the default disc style</dd>
+        <dd>unordered-list-square: Uses square bullets</dd>
+        <dd>unordered-list-circle: Uses circle bullets</dd>
+        <dd>unordered-list-none: Removes bullets</dd>
+        <dt>3.Ordered List Styles</dt>
+        <dd>ordered-list-decimal: Uses decimal numbers (default)</dd>
+        <dd>ordered-list-roman: Uses upper Roman numerals</dd>
+        <dd>ordered-list-alpha: Uses lowercase alphabetic characters</dd>
+        <dd>ordered-list-none: Removes numbering</dd>
+        <dt>4.Custom List Item Styles</dt>
+        <dd>custom-list li: Applies general styles to all list items within the .custom-list class</dd>
+        <dd>custom-list .custom-list-item: Removes the default list style and adds custom indentation</dd>
+        <dd>custom-list .custom-list-item::before: Adds a custom bullet using the content property</dd>
+        
+      </dl>
+      <h2>HTML and CSS Code for Advanced List</h2>
+      <iframe src="https://trinket.io/embed/html/1238be005d" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+     <h2>Table in CSS</h2>
+     <p>Styling tables in CSS involves applying styles to the table element itself, as well as its rows, columns, headers, and cells. Below are examples demonstrating different ways to style tables using CSS</p>
+     <span>Example Code Demonstrating Table Styling</span>
+     <iframe src="https://trinket.io/embed/html/992a252ac5" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <h2>Explanation of the Example Code</h2>
+     <dl>
+      <dt>1.Basic Table Styles</dt>
+      <dd>Applies general styles to all tables using the table selector</dd>
+      <dd>border-collapse: collapse; ensures that borders between cells are not duplicated</dd>
+      <dd>Borders are applied to &lt;th&gt; and &lt;td&gt; elements, with padding for better readability</dd>
+      <dd>The header row has a light gray background</dd>
+      <dt>2.Alternating Row Colors</dt>
+      <dd>Uses nth-child(even) and nth-child(odd) pseudo-classes to apply different background colors to even and odd rows, respectively</dd>
+      <dt>3.Hover Effect</dt>
+      <dd>Adds a hover effect to rows using the :hover pseudo-class, changing the background color when the mouse pointer is over a row</dd>
+      <dt>4.Zebra Striping</dt>
+      <dd>A class .zebra is applied to a table to demonstrate zebra striping using alternating row colors for better readability</dd>
+      <dt>5.Bordered Table with No Collapsing</dt>
+      <dd>The .bordered-table class demonstrates a table with spacing between cells (border-spacing: 0;) and borders around each cell</dd>
+      <dt>6.Table with Caption</dt>
+      <dd>The .captioned-table class includes a <caption> element, which provides a title for the table. The caption is styled with padding and background color for distinction</dd>
+     </dl>
+     <h2>HTML and CSS Code for Student Database Table</h2>
+     <iframe src="https://trinket.io/embed/html/47a28a97e8" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     
+     
+    </div>
+
+    <div id="topic6" class="topic active">
+      <h2>styling form</h2>
+      <p>Styling forms to enhance their appearance and usability involves using CSS to style form elements like inputs, text areas, checkboxes, radio buttons, and buttons. Here's a detailed example showing how to style a form with various elements</p>
+      <span>HTML and CSS Code for Styling a Form</span>
+      <iframe src="https://trinket.io/embed/html/3998456d74" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Explanation of the Code</h2>
+      <dl>
+        <dt>HTML Structure</dt>
+        <dd>The form is structured using the &lt;form&gt; element, with various form controls like text inputs, email inputs, password inputs, date inputs, radio buttons, checkboxes, textareas, and a submit button</dd>
+       <dd>Each form control is wrapped in a &lt;div&gt; with the class form-group to apply consistent styling and spacing</dd>
+       <dt>CSS Styling</dt>
+       <dd>General Styles <br>
+        The body has a light gray background and padding <br>
+        The form is centered with a maximum width, padding, white background, rounded corners, and a box shadow for dept</dd>
+       <dt>Form Groups</dt>
+       <dd>Each .form-group has a margin at the bottom to space out the form elements</dd>
+       <dd>Labels are styled to be bold and block-level elements</dd>
+       <dt>Form Controls</dt>
+       <dd>Text inputs, email inputs, password inputs, date inputs, textareas, and selects have consistent padding, font size, borders, and rounded corners</dd>
+       <dd>Textareas are vertically resizable and have a minimum height</dd>
+       <dt>Buttons</dt>
+       <dd>The submit button has padding, background color, text color, border radius, and a hover effect to change the background color</dd>
+
+      </dl>
+      <h2>HTML and CSS Code for a Styled Form with Background Color</h2>
+      <iframe src="https://trinket.io/embed/html/f965f0f18f" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     
+    
+    </div>
+
+      <div id="topic7" class="topic">
+       <h2>position in CSS</h2>
+       <p>CSS offers several ways to position elements on a webpage. Here are the different position values available in CSS along with explanations and example code for each</p>
+
+       <span>1.Static Positioning (default)</span>
+       <p>This is the default positioning for all elements. Elements are positioned according to the normal document flow</p>
+       <iframe src="https://trinket.io/embed/html/752008b99b" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <span>example</span>
+      <iframe src="https://trinket.io/embed/html/5f3c35fb81" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>2.Relative Positioning</span>
+       <p>Elements are positioned relative to their normal position. Using top, right, bottom, and left will move the element from its original position, but it will still occupy its original space</p>
+       <iframe src="https://trinket.io/embed/html/bce556c73b" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>example</span>
+       <p>Relative positioning allows you to move an element relative to its normal position in the document flow. The element remains in the document flow, but its visual position can be adjusted with the top, right, bottom, and left properties</p>
+       <span>example</span>
+       <iframe src="https://trinket.io/embed/html/0018c89417" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>3.Absolute Positioning</span>
+       <p>Elements are positioned relative to their nearest positioned ancestor (i.e., the nearest ancestor with a position value other than static). If no such ancestor exists, it will be positioned relative to the initial containing block</p>
+       <iframe src="https://trinket.io/embed/html/6abdeadd13" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>example</span>
+       <iframe src="https://trinket.io/embed/html/54510fc140" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>4.Fixed Positioning</span>
+       <p>Elements are positioned relative to the browser window. They do not move when the window is scrolled</p>
+       <iframe src="https://trinket.io/embed/html/6386dd85ab" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe> 
+       <span>example</span>
+       <iframe src="https://trinket.io/embed/html/f61db4d155" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>5.Sticky Positioning</span>
+       <p>Elements are positioned based on the user's scroll position. A sticky element toggles between relative and fixed positioning, depending on the scroll position. It is positioned relative until it crosses a specified threshold, then it is fixed</p>
+       <iframe src="https://trinket.io/embed/html/0ab936ed51" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>example</span>
+       <iframe src="https://trinket.io/embed/html/90190c5ab3" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>       
+
+      </div>
+
+      <div id="topic8" class="topic">
+       <h2>media query in css</h2>
+       <p>A useful technique for applying styles based on the properties of the device or viewport displaying the content is CSS media queries. They make responsive design possible, so you can make websites that change to fit various screen sizes and gadgets. Below is a breakdown of different media inquiries along with samples of each.</p>
+       <span>1. Basic Media Query</span>
+       <p>A media query that applies styles based on the width of the viewport</p>
+       <div class="cmd">
+        /* Styles for screens wider than 600px */ <br>
+@media (min-width: 600px) { <br>
+    body { <br>
+        background-color: lightblue; <br>
+    }<br>
+}<br>
+
+/* Styles for screens narrower than 600px */<br>
+@media (max-width: 599px) {<br>
+    body {<br>
+        background-color: lightcoral;<br>
+    }<br>
+}<br>
+ </div>
+     <span>2. Combining Conditions with Logical Operators</span>
+     <p>You can use and, or, and not to combine multiple conditions</p>
+     <div class="cmd">
+      /* Styles for screens between 600px and 1200px */<br>
+@media (min-width: 600px) and (max-width: 1200px) {<br>
+    body {<br>
+        background-color: lightgreen;<br>
+    }<br>
+}<br>
+
+/* Styles for screens wider than 1200px or in landscape orientation */<br>
+@media (min-width: 1200px), (orientation: landscape) {<br>
+    body {<br>
+        background-color: lightyellow;<br>
+    }<br>
+}<br>
+
+/* Styles for screens that are not in portrait orientation */<br>
+@media not all and (orientation: portrait) {<br>
+    body {<br>
+        background-color: lightgray;<br>
+    }<br>
+}<br>
+
+     </div>   
+     <span>3. Targeting Device Characteristics</span>
+     <p>Media queries can target various device characteristics such as resolution, aspect ratio, and color</p>
+     <label>a. Resolution</label>
+     <div class="cmd">
+      /* Styles for high-resolution screens (e.g., Retina displays) */<br>
+@media (min-resolution: 2dppx) {<br>
+    body {<br>
+        background-color: lightpink;<br>
+    }
+}<br>
+
+</div>
+<label>b. Aspect Ratio</label>
+<div class="cmd">
+  /* Styles for screens with an aspect ratio of 16:9 */<br>
+@media (aspect-ratio: 16/9) {<br>
+    body {<br>
+        background-color: lightblue;<br>
+    }<br>
+}<br>
+
+</div>
+<label >c. Color</label>
+<div class="cmd">
+  /* Styles for screens that can display at least 8-bit color */<br>
+@media (min-color: 8) {<br>
+    body {<br>
+        background-color: lightgreen;<br>
+    }<br>
+}<br>
+
+</div>
+<span>4. Orientation</span>
+<p>Target styles based on the orientation of the device (portrait or landscape)</p>
+<div class="cmd">
+  /* Styles for portrait orientation */<br>
+@media (orientation: portrait) {<br>
+    body {<br>
+        background-color: lightblue;<br>
+    }<br>
+}<br>
+
+/* Styles for landscape orientation */<br>
+@media (orientation: landscape) {<br>
+    body {<br>
+        background-color: lightcoral;<br>
+    }<br>
+}<br>
+
+</div>
+<span>5. Prefers Color Scheme</span>
+<p>Apply styles based on the user’s preferred color scheme (e.g., dark mode or light mode)</p>
+<div class="cmd">
+  /* Styles for users who prefer a dark color scheme */ <br>
+@media (prefers-color-scheme: dark) { <br>
+    body { <br>
+        background-color: black; <br>
+        color: white; <br>
+    } <br>
+} <br>
+
+/* Styles for users who prefer a light color scheme */ <br>
+@media (prefers-color-scheme: light) { <br>
+    body { <br>
+        background-color: white; <br>
+        color: black; <br>
+    } <br>
+} <br>
+
+</div>
+<span>6. Prefers Reduced Motion</span>
+<p>Adjust styles for users who prefer reduced motion for accessibility reasons</p>
+<div class="cmd">
+  /* Styles for users who prefer reduced motion */  <br>
+@media (prefers-reduced-motion: reduce) { <br>
+    * { <br>
+        animation: none; <br>
+        transition: none; <br>
+    } <br>
+    <br>}
+
+</div>
+<span>7. Example: Responsive Design</span>
+<p>Here's a more comprehensive example demonstrating a responsive layout using multiple media queries</p>
+<iframe src="https://trinket.io/embed/html/c61f3768dd" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic9" class="topic">
+       <h2>grandient in css</h2>
+       <p>Without the requirement for picture files, CSS gradients are an effective technique for producing gradations between colors that are smooth. In CSS, gradients come in various forms, each with a unique syntax and set of applications. The primary gradient kinds are listed below with examples. </p>
+       <span>1. Linear Gradients</span>
+       <p>A linear gradient transitions between colors along a straight line, either horizontally, vertically, or at any angle.</p>
+       <label>Basic Linear Gradient</label>
+       <iframe src="https://trinket.io/embed/html/a2a1c419bf" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <label>Vertical Gradient</label>
+       <iframe src="https://trinket.io/embed/html/f981555211" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <label>Diagonal Gradient</label>
+       <iframe src="https://trinket.io/embed/html/e76c040fc7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <br>
+       <br>
+       <span>2. Radial Gradients</span>
+       <p>A radial gradient transitions between colors radiating from an origin (usually the center of the element)</p>
+       <label>Basic Radial Gradient</label>
+       <iframe src="https://trinket.io/embed/html/b32df6d746" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <label>Elliptical Gradient</label>
+       <iframe src="https://trinket.io/embed/html/5e28fa0668" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>3. Conic Gradients</span>
+       <p>A conic gradient transitions colors around a central point, creating a pie-chart-like effect</p>
+       <iframe src="https://trinket.io/embed/html/5e32920101" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>4. Using Multiple Color Stops</span>
+       <p>You can specify multiple color stops for more complex gradients</p>
+       <iframe src="https://trinket.io/embed/html/b9e553dcab" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>5. Repeating Gradients</span>
+       <p>You can create repeating gradients that repeat the color stops</p>
+       <iframe src="https://trinket.io/embed/html/3b771c59dc" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <label>Repeating Radial Gradient</label>
+      <iframe src="https://trinket.io/embed/html/800a8ea3c1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+
+
+      </div>
+
+      <div id="topic10" class="topic">
+     <h2>CSS units</h2>
+     <p>Absolutely, let's go into more detail on each CSS unit: em, rem, vh, vw, and in, with both explanations and examples that cover their usage in HTML and CSS</p>
+     <br>
+     <span>1.em</span>
+     <dl>
+      <dt>Explanation</dt>
+      <dd>* em is a relative unit</dd>
+      <dd>* It is relative to the font-size of the element it is used on. If used for the font-size property, it is relative to the font-size of the parent element</dd>
+      <dd>* em units are most commonly used for font sizes, margins, paddings, and spacing</dd>
+     </dl>
+     <span>Example</span>
+     <iframe src="https://trinket.io/embed/html/3b6d403e36" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>2.rem</span>
+     <dl>
+      <dt>Explanation</dt>
+      <dd>* rem stands for "root em"</dd>
+      <dd>* It is relative to the font-size of the root element (&lt;html&gt;)</dd>
+      <dd>* This unit ensures consistency across different elements since they all refer to the same root font size</dd>
+
+     </dl>
+    <span>Example</span>
+    <iframe src="https://trinket.io/embed/html/4694e95802" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>3.vh</span>
+    <dl>
+      <dt>Explanation</dt>
+      <dd>* vh stands for "viewport height"</dd>
+      <dd>* 1vh is equal to 1% of the height of the viewport (the visible area of the browser window)</dd>
+      <dd>* Useful for making elements responsive to the height of the viewport</dd>
+
+    </dl>
+    <span>Example</span>
+    <iframe src="https://trinket.io/embed/html/29bb00b57c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>4.vw</span>    
+    <dl>
+      <dt>Explanation</dt>
+      <dd>* vw stands for "viewport width"</dd>
+      <dd>* 1vw is equal to 1% of the width of the viewport</dd>
+      <dd>* Useful for making elements responsive to the width of the viewport</dd>
+    </dl>
+    <span>Example</span>
+    <iframe src="https://trinket.io/embed/html/2d1cbf5a8d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <span>5.in</span>
+    <dl>
+      <dt>Explanation</dt>
+      <dd>* in stands for inches</dd>
+      <dd>* It is an absolute unit of measurement</dd>
+      <dd>* Primarily used in print styles or for specific sizing requirements</dd>
+    </dl>
+    <span>Example</span>
+    <iframe src="https://trinket.io/embed/html/523cad51d6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <br>
+    <br>
+    <h2>Full Combined Example</h2>
+    <iframe src="https://trinket.io/embed/html/3764555171" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic11" class="topic active">
+     <h2>HTML 5 layout</h2>
+     <p>HTML5 introduced a set of new semantic elements to help define the structure of a webpage more clearly. These elements include &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, and &lt;footer&gt;. Using these elements along with CSS allows for more organized and readable code. Here’s an example of a typical HTML5 layout with CSS to style it</p>
+      <h2>HTML5 Layout</h2>
+      <iframe src="https://trinket.io/embed/html/837bdefa82" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <h2>Explanation</h2>
+     <span>1.HTML Structure</span>`    
+     <p><span>&lt;header&gt;</span>: Contains the title of the website <br>
+      <span>&lt;nav&gt;</span>: Contains the navigation menu <br>
+      <span>&lt;main&gt;</span>: Contains the main content of the page, including  <span>&lt;article&gt;</span> for the primary content and <span>&lt;aside&gt;</span> for related content or a sidebar <br>
+        <span>&lt;footer&gt;</span>: Contains the footer of the website</p>
+
+      <span>2.CSS Styling</span>
+      <p><span>CSS Reset</span>: Reset margins, paddings, and set box-sizing to border-box to ensure consistent styling across browsers<br>
+        <span>Body Styling</span>: Sets the font family and line height for the body<br>
+        <span>Container</span>: Centers the layout and sets a width<br>
+        <span>Header, Nav, Footer</span>: Background colors, text colors, paddings, and text alignment<br>
+        <span>Nav Styling</span>: Inline list items for horizontal navigation<br>
+        <span>Main Layout</span>: Flexbox is used to create a two-column layout with article taking up 3 parts of the space and aside taking up 1 part<br>
+        <span>Article and Aside</span>: Padding and background color for aside</p>
+      </div>
+
+
+      <div id="topic12" class="topic">
+      <h2>flexbox in CSS</h2>
+      <p>Flexible Box Layout, is a powerful layout system in CSS3. It allows you to design a responsive layout structure without using float or positioning. Here’s a detailed explanation of Flexbox along with example code</p>
+      <span>Key Concepts of Flexbox</span>
+      <dl>
+        <dt>1.Flex Container and Flex Items</dt>
+        <dd><label >Flex Container</label>:The parent element where display: flex; or display: inline-flex; is applied</dd>
+        <dd><label>Flex Items</label>:The direct children of the flex container</dd>
+        <dt>2.Axis</dt>
+        <dd><label>Main Axis</label>:Defined by the flex-direction property, it can be horizontal or vertical</dd>
+        <dd><label>Cross Axis</label>:Perpendicular to the main axis</dd>
+      </dl>
+      <span>Important Flexbox Properties</span>
+      <dl>
+        <dt>1.Container Properties</dt>
+        <dd><label>display: flex</label>; Defines a flex container</dd>
+        <dd><label>flex-direction</label>;Specifies the direction of the flex items (row, row-reverse, column, column-reverse)</dd>
+        <dd><label>flex-wrap</label>;Specifies whether flex items should wrap (nowrap, wrap, wrap-reverse)</dd>
+        <dd><label>justify-content</label>;Aligns items along the main axis (flex-start, flex-end, center, space-between, space-around, space-evenly)</dd>
+      </dl>
+      <h2>Example Code</h2>
+      <iframe src="https://trinket.io/embed/html/a9267bee44" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     
+      </div>
+
+      <div id="topic13" class="topic">
+      <h2>CSS Grid Layout</h2>
+      <p>CSS Grid Layout is a powerful layout system that provides a two-dimensional grid-based layout, allowing you to create complex layouts easily. It offers more flexibility and control than traditional layout methods</p>
+      <h2>Key Concepts of CSS Grid</h2>
+      <dl>
+        <dt>1.Grid Container and Grid Item</dt>
+        <dd><label>Grid Container</label>: The parent element with display: grid; or display: inline-grid;</dd>
+        <dd><label>Grid Items</label>: The direct children of the grid container</dd>
+        <dt>2.Grid Lines, Tracks, and Cells</dt>
+        <dd><label>Grid Lines</label>: The lines dividing the grid into rows and columns</dd>
+        <dd><label>Grid Tracks</label>: The space between two adjacent grid lines (rows or columns)</dd>
+        <dd><label>Grid Cells</label>: The smallest units on the grid, formed by the intersection of rows and columns</dd>
+      </dl>
+      <h2>Important Grid Properties</h2>
+      <span>1.Container Properties</span>
+      <dl>
+        <dt>display: grid</dt>
+        <dd>Defines the element as a grid container</dd>
+        <dt>grid-template-columns</dt>
+        <dd>Defines the number and size of columns</dd>
+        <dt>grid-template-rows</dt>
+        <dd>Defines the number and size of rows</dd>
+        <dt>grid-template-areas</dt>
+        <dd>Defines named grid areas</dd>
+        <dt>justify-items</dt>
+        <dd>Aligns grid items horizontally within their cells</dd>
+        <dt>align-items</dt>
+        <dd>Aligns grid items vertically within their cells</dd>
+        <dt>justify-content</dt>
+        <dd>Aligns the grid within the container horizontally</dd>
+      </dl>
+      <span>2.Item Properties</span>
+      <dl>
+        <dt>grid-column</dt>
+        <dd>A shorthand for grid-column-start and grid-column-end</dd>
+        <dt>grid-row</dt>
+        <dd>A shorthand for grid-row-start and grid-row-end</dd>
+      </dl>
+     <h2>Example Code</h2>
+     <iframe src="https://trinket.io/embed/html/6cd189f481" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic14" class="topic">
+       <h2>CSS transitions</h2>
+       <p>CSS transitions allow you to change property values smoothly (over a given duration) instead of instantly. This can create animations for changes in the appearance of an element. Transitions are commonly used for effects such as hover, focus, active, and other states</p>
+       <span>Key Properties of CSS Transitions</span>
+       <dl>
+        <dt>1.transition-property</dt>
+        <dd>Specifies the CSS property to which the transition is applied</dd>
+        <dt>2.transition-duration</dt>
+        <dd>Specifies the duration of the transition</dd>
+        <dt>3.transition-timing-function</dt>
+        <dd>Specifies the speed curve of the transition</dd>
+        <dt>4.transition-delay</dt>
+        <dd>Specifies when the transition effect will start</dd>
+       </dl>
+       <h2>Example Code</h2>
+       <iframe src="https://trinket.io/embed/html/9f97fd7c72" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>Explanation</h2>
+       <dl>
+        <dt>1.HTML Structure</dt>
+        <dd>The HTML contains a single div element with the class .box</dd>
+        <dt>2.CSS Styling</dt>
+        <dd><label>Body</label>: Centers the .box vertically and horizontally using Flexbox</dd>
+        <dt>3.Box</dt>
+        <dd><label>width, height, background-color, color, and display</label>:Sets initial properties</dd>
+        <dd><label>transition-property</label>:Specifies the properties to transition: background-color, width, height, transform, and box-shadow</dd>
+        <dd><label>transition-duration</label>:Sets the duration of the transition to 0.5s (500 milliseconds)</dd>
+        <dd><label>transition-timing-function</label>:Uses ease-in-out for a smooth start and end</dd>
+        <dt>4.Hover State</dt>
+        <dd>When the .box is hovered over, the following changes occur</dd>
+        <dd><label>background-color</label>:Changes to #ff9800</dd>
+        <dd><label>width</label>:Expands to 150px</dd>
+        <dd><label>height</label>:Expands to 150px</dd>
+        <dd><label>transform</label>:Rotates 45 degrees</dd>
+       </dl>
+       <h2>Example with All Properties</h2>
+       <iframe src="https://trinket.io/embed/html/c3cd77a91a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+      </div>
+
+      <div id="topic15" class="topic active">
+     <h2>CSS animations</h2>
+     <p>CSS animations allow you to create complex animations with keyframes, specifying how an element should change at specific points in time. Unlike transitions, which are limited to simple property changes triggered by events like hover, animations provide more control and flexibility</p>
+     <h2>Key Concepts of CSS Animations</h2>
+     <dl>
+      <dt>1.@keyframes Rule</dt>
+      <dd>Defines the intermediate steps in an animation sequence</dd>
+      <dt>2.animation-name</dt>
+      <dd>Specifies the name of the @keyframes animation</dd>
+      <dt>3.animation-duration</dt>
+      <dd>Defines how long the animation should take to complete one cycle</dd>
+      <dt>4.animation-timing-function</dt>
+      <dd>Specifies the speed curve of the animation</dd>
+      <dt>5.animation-delay</dt>
+      <dd>Defines when the animation will start</dd>
+      <dt>6.animation-iteration-count</dt>
+      <dd>Specifies the number of times the animation should play</dd>
+      <dt>7.animation-direction</dt>
+      <dd>Defines whether the animation should play in reverse on alternate cycles</dd>
+     </dl>
+     <span>Example Code</span>
+     <iframe src="https://trinket.io/embed/html/174c7efc32" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <span>@keyframes Rule</span>
+     <p>
+      <span>0%: </span>Initial state with no transformation, a scale of 1, original background color, and a border-radius of 10px <br>
+<span>25%:</span> The box moves 50px to the right, scales up to 1.2, changes the background color to orange, and the border-radius to 25px<br>
+<span>50%:</span> The box moves 100px to the right, scales up to 1.5, changes the background color to red, and the border-radius to 50px<br>
+<span>75%:</span> The box moves back to 50px to the right, scales down to 1.2, changes the background color to blue, and the border-radius to 25px<br>
+<span>100%:</span> The box returns to its original position, scale, background color, and border-radius.
+     </p>
+    <span>example code</span>
+
+     <iframe src="https://trinket.io/embed/html/9e8cd5b758" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic16" class="topic active">
+      <h2>z-index in css</h2>
+      <p>The z-index property in CSS controls the vertical stacking order of elements that overlap. Elements with a higher z-index value will appear in front of elements with a lower z-index value</p>
+      <span>Syntax</span>
+      <div class="cmd">
+        element { <br>
+          position: relative; /* or absolute, fixed, sticky */ <br>
+          z-index: value; /* integer value */ <br>
+        } <br>
+      </div>
+      <h2>Example</h2>
+      <iframe src="https://trinket.io/embed/html/df9d88c863" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Example code</h2>
+      <iframe src="https://trinket.io/embed/html/fe1e26320b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic17" class="topic">
+     
+
+
+
+
+        
+
+      </div>
+
+      <div id="topic18" class="topic">
+      
+          
+
+      </div>
+      
+      
+      
+  </div>
+  <style>
+
+   
+    /*  content code */
+    .topic{
+      font-size:medium;
+      text-transform: lowercase;
+    }
+    .content h2{
+      font-size:30px;
+      padding: 10px;
+      text-transform: capitalize;
+    }
+    .content p{
+      padding: 10px;
+      line-height: 20px;
+      font-size:20px;
+      text-transform: lowercase;
+    }
+    span{
+      font-weight:bold;
+      font-size: 20px;
+      padding: 10px;
+
+    }
+   dt{
+    padding: 20px;
+    font-size:20px;
+    font-weight: bold;
+   }
+   dd{
+    line-height:20px;
+    font-size:20px;
+   }
+  .cmd{
+    margin-left:7%;
+    padding:18px;
+    line-height: 26px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+    /* finished content code */
+
+
+
+
+
+
+        *{
+        text-transform: capitalize;
+       
+    }
+
+ #leftMenu button{
+margin:12px;
+
+ }
+  
+    
+    nav{
+        width:15%;
+        float: left;
+        background-color: rgb(139, 139, 137);
+        position: fixed;
+        overflow-y:auto ;
+        height:81%;
+        padding-left:29px ;
+        font-size:medium;
+        margin: 0;
+        border-radius: 10px;
+    }
+    .bottomnav a li{ 
+      padding:43px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+     
+    }
+    
+    pre{
+        width: 30%;
+    }
+    
+    h3{
+        color: green;
+        padding: 10px;
+    }
+    nav a{
+        text-decoration:none;
+        font-size: medium;
+        
+    }
+    nav a:hover{
+        background-color: rgb(224, 217, 217);
+      
+       
+    }
+    nav a:active{
+      color: green;
+    }
+    .content{
+        width:80%;
+        float:right;
+        padding:5px;
+        margin-right:16%;
+        background-color: white;
+    }
+    
+    ul button{
+        padding:10px 20px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        background-color: green;
+        cursor: pointer;
+
+    }
+.topic {
+  display: none;
+}
+.topic.active {
+  display: block;
+}
+
+/* responsible */
+@media(max-width:500px){
+  nav{
+        padding: 15px;
+        width:30%;
+        float: left;
+        background-color: rgb(139, 139, 137);
+        position: fixed;
+        overflow-y:auto ;
+        height:80%;
+        padding-left:10px ;
+        font-size: x-small;
+        line-height:3px;
+    }
+    .bottomnav a li{
+      padding:3px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    
+    }
+    iframe{
+     width: 100%;
+     height: 400;
+     padding: 10px;
+     padding-left: 0;
+     padding-right: 0;
+    }
+    .content h2{
+      font-size:medium;
+      padding: 10px;
+      text-transform: capitalize;
+    }
+    .content p{
+      padding: 5px;
+      line-height: 20px;
+      font-size:x-small;
+      text-transform: lowercase;
+    }
+    dt{
+    padding: 10px;
+    font-weight:14px;
+    font-size:medium;
+   }
+   span{
+    font-size:medium ;
+   }
+   dd{
+    line-height:30px;
+    font-size:x-small;
+   }
+    h3{
+        color: green;
+        padding: 10px;
+        font-size: medium;
+    }
+    nav a{
+        text-decoration:none;
+        
+        
+    }
+    nav a:hover{
+        background-color: rgb(224, 217, 217);
+       
+    }
+    .content{
+      width:97%;
+        float:right;
+        padding: 5px;
+        margin: 0;
+    }
+    a button{
+        padding:5px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        background-color: green;
+        cursor: pointer;
+        border-radius: 10px;
+
+    }
+.topic {
+  display: none;
+}
+.topic.active {
+  display: block;
+}
+
+}
+
+/* responsible code finished */
+
+
+/* content code */
+
+.topic{
+      font-size: small;
+      text-transform: lowercase;
+    }
+    .content h2{
+      padding: 10px;
+    }
+    .content p{
+      padding: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* finised code */
+
+  </style>
+  </style>
+<script>
+
+  
+function showTopic(topicId) {
+// Hide all topics
+var topics = document.querySelectorAll('.topic');
+topics.forEach(function(topic) {
+  topic.classList.remove('active');
+});
+
+
+// Show the selected topic
+var selectedTopic = document.getElementById(topicId);
+selectedTopic.classList.add('active').close();
+}
+
+
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const leftMenu = document.getElementById('leftMenu');
+
+    openMenuBtn.addEventListener('click', () => {
+        leftMenu.style.left = '0';
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+        leftMenu.style.left = '-200px';
+    });
+
+</script>
+
+
+<!--finish center of the code-->
+
+
+
+    <!--footer code-->
+
+   
+</body>
+</html>
+<script>
+  function darkmood(){
+    let body=document.getElementById("body").style.backgroundColor="black";
+    let color=document.getElementById("body").style.color="white";
+    let head=document.getElementById("header").style.color="black";
+  }
+</script>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

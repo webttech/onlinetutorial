@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<header id="header">
+   
+</header>
+<hr>
+<body id="body">
+    <div class="bottomnav" style="position: fixed;">
+<ul>
+    <a href="#"> <li><button id="openMenuBtn">Open Menu</button></li></a>
+    <a href="css tutorial .html"><LI>CSS</LI></a>
+    <a href="java script.html"> <LI>JAVASCRIPT</LI></a>
+    
+   
+    
+   
+</ul>
+    </div>
+
+<!--center of the code-->
+
+
+
+ <!--html tutorial -->
+ <nav  class="menu-bar" id="leftMenu"> 
+   <button id="closeMenuBtn">Close Menu</button>
+    <h3>HTMLTutorial</h3>
+    <a href="#" onclick="showTopic('topic1')">Introduction</a><br>
+    <a href="#" onclick="showTopic('topic2')">paragraph</a><br>
+    <a href="#" onclick="showTopic('topic3')"> List in HTML</a><br>
+    <a href="#" onclick="showTopic('topic5')">Links in HTML</a><br>
+    <a href="#" onclick="showTopic('topic6')">Images in HTML</a><br>
+    <a href="#" onclick="showTopic('topic7')">Tables in HTML</a><br>
+    <a href="#" onclick="showTopic('topic8')">Meta tags</a><br>
+    <a href="#" onclick="showTopic('topic9')">HTML Div Element</a><br>
+    <a href="#" onclick="showTopic('topic10')">HTML class Attribute</a><br>
+    <a href="#" onclick="showTopic('topic11')">HTML id Attribute</a><br>
+    <a href="#" onclick="showTopic('topic12')">HTML Iframes</a><br>
+    <a href="#" onclick="showTopic('topic13')">HTML Forms</a><br>
+    <a href="#" onclick="showTopic('topic14')">HTML Form Attributes</a><br>
+    <a href="#" onclick="showTopic('topic15')">HTML Input Types</a><br>
+    <a href="#" onclick="showTopic('topic16')">HTML Input Attributes</a><br>
+    <a href="#" onclick="showTopic('topic17')">HTML Video</a><br>
+    <a href="#" onclick="showTopic('topi18')">HTML Audio</a><br>
+    
+   
+   
+
+  </nav>
+  
+  <div class="content">
+       <br>
+      <br>
+      <br>
+    <div id="topic1" class="topic active">
+      <br>
+      <br>
+      <br>
+      <br>
+        <h2>introduction</h2>
+        <p>HTML, or HyperText Markup Language, is the standard language used to create and design the structure of web pages. It uses a series of elements and tags to define the content and layout of a page. HTML elements are the building blocks of web pages and are represented by tags.</p>
+       <iframe src="https://trinket.io/embed/html/f871bcec98" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <h2>Basic Structure of an HTML Document</h2>
+        <p>1.&lt;!DOCTYPE html&gt;: This declaration specifies the HTML version and document type. <br>
+          2. &lt;html&gt;: All other HTML elements are contained within this root element.<br>
+          3.&lt;head&gt;: This section includes links to stylesheets and scripts as well as meta-data about the document, including its title.<br>
+          4.&lt;body&gt;: The real content of the page that is visible to users is contained in this part.<br>
+          </p>
+
+    </div>
+    
+    <div id="topic2" class="topic">
+     <h2>def</h2>
+     <p>
+      The &lt;p&gt; element is utilized to define a paragraph. When it comes to organizing and presenting material in a web document, paragraphs are essential. Every &lt;p&gt; element denotes a block of text, and in the generated output, these blocks are usually separated from one another by vertical whitespace, also known as margins.</p>
+      <h2>Syntax</h2>
+      <p>A paragraph in HTML is created with an opening &lt;p&gt; tag and a closing &lt;/p&gt; tag. The text content of the paragraph goes between these tags.&lt;/p&gt;
+      <iframe src="https://trinket.io/embed/html/885fac89c0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2> &lt;pre&gt; Element</h2>
+        <p>
+          The &lt;pre&gt; element in HTML is used to display preformatted text. Text within this element is displayed in a fixed-width font (usually Courier) and respects both spaces and line breaks, exactly as they are written in the HTML code.
+        </p>
+       <iframe src="https://trinket.io/embed/html/1ee95f8e85" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <h2> &lt;param&gt; Element</h2>
+        <p>
+          The &lt;param&gt; element is used to define parameters for an &lt;object&gt; element, which can be used to embed media like videos, audio, or other types of content within a web page. The &lt;param&gt; element specifies additional information required by the embedded object.
+        </p>
+        <iframe src="https://trinket.io/embed/html/661cf8c1a8" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+    </div>
+
+    <div id="topic3" class="topic">
+     <h2>list</h2>
+     <p>In HTML, lists are used to group a set of related items. There are three main types of lists in HTML</p>
+     <p style="font-weight: bolder;">
+      1.Ordered List (&lt;ol&gt;): Displays items in a numbered sequence <br>
+      2.Unordered List (&lt;ul&gt;): Displays items with bullet points <br>
+      3.Description List (&lt;dl&gt;): Used for pairs of terms and descriptions <br>
+     </p>
+     <h2>Ordered List (&lt;ol&gt;)</h2>
+     <p>An ordered list is used when the sequence of items is important. Each item in an ordered list is wrapped in an &lt;li&gt; (list item) tag</p>
+     <iframe src="https://trinket.io/embed/html/401e0cf526" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <h2>Unordered List (&lt;ul&gt;)</h2>
+     <p>An unordered list is used when the sequence of items is not important. Each item is wrapped in an &lt;li&gt; tag, and items are typically displayed with bullet points</p>
+     <iframe src="https://trinket.io/embed/html/10903088d7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <h2>Description List (&lt;dl&gt;)</h2>
+     <p>A description list is used to display a list of terms and their descriptions. Each term is wrapped in a &lt;dt&gt; (definition term) tag, and each description is wrapped in a &lt;dd&gt; (definition description) tag</p>
+     <iframe src="https://trinket.io/embed/html/315ae8254d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <h2>Combined Example</h2>
+     <iframe src="https://trinket.io/embed/html/8eb55418c4" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+    </div>
+
+
+    <div id="topic5" class="topic">
+     <h2>links</h2>
+     <p>Links in HTML are made with the &lt;a&gt; (anchor) element. Through links, users can access additional online resources as well as pages or sections of the same website. You can also generate download or email links with the &lt;a&gt; element.</p>
+     <h2>Basic Syntax</h2>
+     <iframe src="https://trinket.io/embed/html/10d4718638" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <p><span>href:</span> The href attribute specifies the URL of the page the link goes to <br>
+      <span>Link Text:</span> This is the clickable text that users see.</p>
+     <h2>Example</h2>
+     <iframe src="https://trinket.io/embed/html/cc8155d45b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+     <h2>Types of Links</h2>
+     <p>
+<span>1.External Links:</span> Links to pages on different websites <br>
+<span>2.Internal Links:</span> Links to different pages or sections within the same website <br>
+<span>3.Email Links:</span> Links to open the user's default email program to send an email <br>
+<span>4.Download Links:</span> Links to download a file <br>
+     </p>
+    <h2>External Link</h2>
+    <iframe src="https://trinket.io/embed/html/7c0eab1243" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>Internal Link</h2>
+    <iframe src="https://trinket.io/embed/html/9a63249de1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>Email Link</h2>
+    <iframe src="https://trinket.io/embed/html/40d1535151" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>Download Link</h2>
+    <iframe src="https://trinket.io/embed/html/92d48b179b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>Combined Example</h2>
+    <iframe src="https://trinket.io/embed/html/a069bad9f3" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+    </div>
+    <div id="topic6" class="topic active">
+      <h2>image</h2>
+      <p>
+        The &lt;img&gt; element is used in HTML to embed images. You can put images on a web page with this element. Since the &lt;img&gt; element is self-closing, a closing tag is not necessary.
+      </p>
+      <h2>Syntax</h2>
+      <iframe src="https://trinket.io/embed/html/2fa9a6d761" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Attributes of the &lt;img&gt; Element</h2>
+      <p>
+<span>1.src:</span> The path to the image file is specified by the src property. This could be a URL, an absolute path, or a relative route <br>
+<span>2.alt:</span> If the image can't be displayed, the alt attribute offers an alternate text. Both SEO and accessibility benefit from this <br>
+<span>3.width and height:</span> These optional parameters define the image's pixel dimensions <br>
+<span>4.title:</span> When the user hovers over an image, the title element, which normally displays as a tooltip, offers further information about the image <br></p>
+      <h2>Example</h2>
+      <p>Here is a simple example of embedding an image in an HTML document</p>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Attributes Example</title>
+</head>
+<body>
+    <h2>Image Attributes Example</h2>
+    
+    <img src="https://via.placeholder.com/300" alt="Placeholder Image" title="Example Image" width="200" height="150">
+</body>
+</html>
+
+      <h2>Explanation of Example</h2>
+      <p>1.The &lt;img&gt; element embeds an image into the web page <br>
+        2.The src attribute points to the URL of the image (https://www.example.com/image.jpg)<br>
+        3.The alt attribute provides alternative text ("Example Image") for screen readers and when the image cannot be displayed<br>
+        4.The width and height attributes set the dimensions of the image to 600 pixels wide and 400 pixels high.</p>
+      <h2>Explanation of Combined Example</h2>
+       <span>1.Responsive Image</span>
+       <iframe src="https://trinket.io/embed/html/54f9c1e0b3" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>2.Image with title Attribute</span>
+       <iframe src="https://trinket.io/embed/html/e7ab2a08b0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>3.Image as a Link</span>
+       <iframe src="https://trinket.io/embed/html/821d42d2a6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+    </div>
+      <div id="topic7" class="topic">
+       <h2>Tables</h2>
+       <p>Tables in HTML are used to organize and display data in a tabular format. An HTML table consists of the &lt;table&gt; element and one or more rows of table data. Rows are defined using the  &lt;tr&gt; element, and each row contains cells which are defined using  &lt;td&gt; (table data) or  &lt;th&gt; (table header) elements.</p>
+       <h2>Basic Structure</h2>
+       <iframe src="https://trinket.io/embed/html/db9221c50e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Example</h2>
+      <iframe src="https://trinket.io/embed/html/ff44538e94" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Explanation of Example</h2>
+      <span>&lt;table&gt;:</span> Defines the table <br>
+      <span>&lt;tr&gt;:</span> Defines a table row <br>
+      <span>&lt;th&gt;:</span> Defines a header cell in a table <br>
+      <span>&lt;td&gt;:</span> Defines a standard data cell in a table <br>
+      <span>border="1":</span> Adds a border to the table and its cells for visibility <br>
+       <h2>More Advanced Example</h2>
+       <iframe src="https://trinket.io/embed/html/7a375428a0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>CSS Styling</h2>
+      <p><span>border-collapse:</span> collapse;: Collapses the borders of the table into a single border <br>
+        <span>border:</span> 1px solid black;: Adds a solid border to the cells<br>
+        <span>padding:</span> 8px;: Adds padding to the cells<br>
+        <span>text-align:</span> left;: Aligns text to the left in cells<br>
+        <span>background-color:</span> #f2f2f2;: Adds a background color to the header cells<br>
+        <span>caption-side:</span> top;: Positions the caption at the top of the table<br>
+        <span>font-weight:</span> bold;: Makes the caption text bold<br>
+        <span> margin: 10px;:</span> Adds margin around the caption</p>
+
+      </div>
+      <div id="topic8" class="topic">
+       <h2>DEF</h2>
+       <p>HTML elements called meta tags are used to offer structured metadata about a webpage. They can contain information like the page's description, keywords that are pertinent to the content of the page, the document's creator, and guidelines for web crawlers. They are inserted inside the &lt;head&gt; section of an HTML document. Although they are processed by browsers, search engines, and other online services, meta tags are not shown on the page itself.</p>
+       <h2>Common Types of Meta Tags</h2>
+       <dl>
+        <dt>Meta Description</dt>
+        <dd>Provides a brief summary of the page content. This description often appears in search engine results</dd>
+        <iframe src="https://trinket.io/embed/html/ae17dd819e" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <dt>Meta Keywords</dt>
+        <dd>Specifies a list of keywords relevant to the page content (though this is less used by modern search engines)</dd>
+        <iframe src="https://trinket.io/embed/html/3df89af569" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <dt>Meta Author</dt>
+        <dd>Defines the author of the webpage</dd>
+        <iframe src="https://trinket.io/embed/html/e9ca2fd4f8" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <dt>Viewport</dt>
+        <dd>Controls the layout on mobile browsers</dd>
+        <iframe src="https://trinket.io/embed/html/612da430b7" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <dt>Charset</dt>
+        <dd>Specifies the character encoding for the HTML document</dd>
+        <iframe src="https://trinket.io/embed/html/94092b4f13" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <dt>Robots</dt>
+        <dd>Gives instructions to search engine crawlers about which pages to crawl or index</dd>
+        <iframe src="https://trinket.io/embed/html/84528da5e7" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+       </dl>
+       <h2>Example of a Full HTML Document with Meta Tags</h2>
+       <iframe src="https://trinket.io/embed/html/9b6a0814b1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+      </div>
+      <div id="topic9" class="topic">
+       <h2>div element</h2>
+       <p>The &lt;div&gt; element in HTML is a generic container for grouping together related content or elements. It does not inherently convey any meaning or semantic information about its content; its primary purpose is to enable CSS styling or JavaScript manipulation of groups of elements</p>
+       <h2>Key Points About the &lt;div&gt; Element</h2>
+       <dl>
+        <dt>Generic Container</dt>
+        <dd> The &lt;div&gt; element is used to group block-level elements, but it does not apply any specific style or behavior by default</dd>
+       <dt>Styling and Layout</dt>
+       <dd> Often used in combination with CSS for layout purposes, such as creating sections of a webpage, applying background colors, and positioning elements</dd>
+       <dt>JavaScript Interactions</dt>
+       <dd>Can be targeted and manipulated using JavaScript to create dynamic and interactive web applications</dd>
+       <dt>Class and ID Attributes</dt>
+       <dd>Frequently used with class and id attributes to apply specific styles or behaviors to particular &lt;div&gt; elements</dd>
+       </dl>
+       <h2>Basic Example of a <div> Element</h2>
+        <iframe src="https://trinket.io/embed/html/58fffa4bc0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <h2>Explanation</h2>
+        <dl>
+          <dt>HTML Structure</dt>
+          <dd>The HTML structure consists of a &lt;div&gt; element with a class of container, which contains two child &lt;div&gt; elements: one with a class of header and another with a class of content</dd>
+          <dt>CSS Styling</dt>
+          <dd>The CSS styles are applied to the .container, .header, and .content classes</dd>
+          <p><span>container class:</span> Adds a border, padding, margin, and background color to the container div <br>
+            <span>.header class</span>: Increases the font size, makes the text bold, and adds a bottom margin to the header div.<br>
+           <span> .content class</span>: Sets the font size for the content div</p>
+          <h2>Advanced Example with Flexbox Layout</h2>
+          <iframe src="https://trinket.io/embed/html/8c73d9c3c8" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </dl>
+      </div>
+
+      <div id="topic10" class="topic">
+      <h2>class attribute</h2>
+      <p>An HTML element can have one or more class names defined for it using the class attribute. JavaScript and CSS can refer to these class names to apply styles and behaviors to elements. It is possible for several elements to have the same class name, which enables uniform styling throughout.</p>
+      <h2>Key Points About the class Attribute</h2>
+      <dl>
+        <dt>Styling with CSS</dt>
+        <dd>The class attribute is commonly used to apply CSS styles to elements</dd>
+        <dt>JavaScript Manipulation</dt>
+        <dd>It can be used to select and manipulate elements in JavaScript</dd>
+        <dt>Multiple Classes</dt>
+        <dd>An element can have multiple classes separated by spaces.</dd>
+        <dt>Reusability</dt>
+        <dd>Classes promote reusability of styles and scripts across different elements</dd>
+      </dl>
+    <h2>Basic Example of the class Attribute</h2>
+    <iframe src="https://trinket.io/embed/html/821a0d30ab" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>Explanation</h2>
+    <p><span>class="highlight":</span> Applies the highlight class to the paragraph, which sets the background color to yellow <br>
+      <span>class="bold-text":</span> Applies the bold-text class to the paragraph, which makes the text bold<br>
+      <span>class="highlight bold-text":</span> Applies both the highlight and bold-text classes to the paragraph, combining both styles<br>
+      <span>class="highlight bold-text center-text":</span> Applies three classes (highlight, bold-text, and center-text) to the paragraph, combining all the styles</p>
+    <h2>Example with JavaScript Interaction</h2>
+    <iframe src="https://trinket.io/embed/html/7a780819ee" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h2>Explanation</h2>
+    <dl>
+      <dt>CSS Classes</dt>
+      <dd>Defines .hidden class to hide an element (display: none) and .visible class to show an element (display: block)</dd>
+      <dt>JavaScript Function</dt>
+      <dd>The toggleVisibility function toggles the visibility of the paragraph with the ID toggleText by adding and removing the hidden and visible classes</dd>
+      <dt>HTML Structure</dt>
+      <dd> A button triggers the toggleVisibility function, and a paragraph starts hidden with the hidden class</dd>
+    </dl>
+
+      </div>
+
+      <div id="topic11" class="topic active">
+       <h2>id attribute</h2>
+       <p>An HTML element within a document can be uniquely identified using the id attribute. An id has to be unique inside an HTML document, unlike the class attribute, which can be given to numerous items. Because of this, it can be used to target particular elements for linking, styling, and scripting.</p>
+       <h2>Key Points</h2>
+       <dl>
+        <dt>Uniqueness</dt>
+        <dd>Each id value must be unique within a single HTML document</dd>
+        <dt>Styling with CSS</dt>
+        <dd>Can be used to apply specific styles to an individual element</dd>
+        <dt>JavaScript Manipulation</dt>
+        <dd>Allows for direct selection and manipulation of elements in JavaScript</dd>
+        <dt>Anchor Links</dt>
+        <dd>Can create anchor links to specific parts of a page</dd>
+       </dl>
+       <h2>Basic Example of the id Attribute</h2>
+       <iframe src="https://trinket.io/embed/html/dd0b782f5a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>Explanation</h2>
+       <dl>
+        <dt>id="unique-element"</dt>
+        <dd> Assigns a unique identifier unique-element to the first paragraph</dd>
+        <dt>CSS Selector</dt>
+        <dd>he CSS rule #unique-element targets the element with this specific ID and applies styles to it (red color, 20px font size, and bold font weight)</dd>
+       </dl>
+       <h2>Practical Use Cases for the id Attribute</h2>
+       <dl>
+        <dt>CSS Styling</dt>
+        <dd>Apply specific styles to a unique element</dd>
+        <dt>JavaScript Targeting</dt>
+        <dd>Select and manipulate the element using JavaScript</dd>
+        <dt>Anchor Links</dt>
+        <dd>Create jump links to specific parts of a page</dd>
+        <dt>Form Labels</dt>
+        <dd>Associate labels with form elements for better accessibility</dd>
+       </dl>
+       <h2>Example with JavaScript Interaction</h2>
+       <iframe src="https://trinket.io/embed/html/6e6a616af8" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>Explanation</h2>
+       <dl>
+        <dt>SS Styling</dt>
+        <dd>The #message selector targets the paragraph with the ID message and applies initial styles (blue color, 18px font size)</dd>
+        <dt>JavaScript Function</dt>
+        <dd> The changeContent function selects the element with the ID message and changes its text content and color.</dd>
+        <dt>HTML Structure</dt>
+        <dd>A button triggers the changeContent function, and a paragraph with the ID message initially displays original content</dd>
+       </dl>
+      <h2>Example Using ID for Anchor Links</h2>
+      <iframe src="https://trinket.io/embed/html/1a2f471755" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Explanation</h2>
+      <dl>
+        <dt>Anchor Links</dt>
+        <dd>The href="#section1" and href="#section2" attributes in the anchor (&lt;a&gt;) tags create links that jump to the elements with the corresponding id values (section1 and section2)</dd>
+        <dt>ID Attributes</dt>
+        <dd>The id attributes section1 and section2 are assigned to the &lt;h&gt;> elements, making them targets for the anchor links</dd>
+      </dl>
+      </div>
+
+      <div id="topic12" class="topic">
+       <h2>iframe</h2>
+       <p>An HTML element called &lt;iframe&gt;, short for inline frame, is used to embed another HTML document inside the one that is now open. A web page, a video, an interactive map, or any other type of web content can be this embedded document. Content from external sources, including YouTube videos, Google Maps, or social network feeds, is frequently included using iframes.</p>
+       <h2>Key Attributes</h2>
+       <p><span>1.src:</span> Specifies the URL of the document to be embedded <br>
+        <span>2.width and height:</span> Define the size of the iframe in pixels <br>
+        <span>3.frameborder:</span> Specifies whether the iframe should have a border (deprecated in HTML5) <br>
+        <span>4.allowfullscreen:</span> Allows the iframe to display content in fullscreen mode <br>
+       <span>5. sandbox: </span>Adds extra restrictions on the content within the iframe for security purposes.</p>
+       <h2>Basic Example</h2>
+       <iframe src="https://trinket.io/embed/html/4f9f8a3b25" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>Explanation</h2>
+       <span>&lt;iframe width="560" height="315"&gt;</span>
+        <dl><dt>src="https://www.youtube.com/embed/dQw4w9WgXcQ"</dt>
+          <dd>Specifies the size of the iframe and the URL of the YouTube video to be embedded</dd>
+          <dt>title="YouTube video player"</dt>
+          <dd>Provides a title for the iframe content, which is useful for accessibility</dd>
+          <dt>frameborder="0"</dt>
+          <dd>Removes the default border around the iframe</dd>
+          <dt>allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"</dt>
+          <dd>Specifies what features the embedded content is allowed to use</dd>
+          <dt>allowfullscreen</dt>
+          <dd> Allows the iframe to be viewed in fullscreen mode</dd>
+        </dl>
+        <h2>Security Considerations with Iframes</h2>
+        <p>sandbox Attribute: The sandbox attribute can be used to impose restrictions on the content inside the iframe, such as disallowing scripts, form submissions, or same-origin content</p>
+        <iframe src="https://trinket.io/embed/html/961f75c28e" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+
+      <div id="topic13" class="topic">
+        <h2>form</h2>
+        <p>An HTML form is used to collect user input and send it to a server for processing. Forms are essential for web applications, allowing users to submit data such as login credentials, search queries, or any other type of information</p>   
+       <h2>Key Elements of an HTML Form</h2>
+       <p><span>&lt;form&gt;</span>: The container element for form controls. It includes attributes like action, method, and enctype <br>
+       <span>&lt;input&gt;</span>: The most common form element, used for various types of user input <br>
+        <span>&lt;label for=""></label&gt;</span>: Defines labels for form elements<br>
+        <span>&lt;textarea&gt;</span>: For multi-line text input<br>
+        <span>&lt;select&gt;</span>: For drop-down lists<br>
+        <span>&lt;button&gt;</span>: For form submission and other actions.</p>
+       <h2>Basic Form Example</h2>
+       <iframe src="https://trinket.io/embed/html/b2f0e0be51" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>Explanation</h2>
+       <dl>
+        <dt>&lt;form action="/submit_form" method="post"&gt;</dt>
+        <dd>Defines the form with an action URL where the form data will be sent and specifies the HTTP method as POST</dd>
+        <dt>&lt;label&gt; for="name">Name:&lt;/label&gt;</dt>
+        <dd>A label for the name input field. The for attribute is linked to the input's id for accessibility</dd>
+        <dt>&lt;input type="text" id="name" name="name" required&gt;</dt>
+        <dd>A text input field for the name. The required attribute ensures the field must be filled out before submission</dd>
+        <dt>&lt;input type="email" id="email" name="email" required&gt;</dt>
+        <dd>An email input field. The type="email" ensures the input must be a valid email address</dd>
+        <dt>&lt;textarea id="message" name="message" rows="4" cols="50" required&gt;&lt;/textarea&gt;</dt>
+        <dd>A textarea for multi-line text input</dd>
+        <dt>&lt;input type="submit" value="Submit"&gt;</dt>
+        <dd>A submit button to send the form data</dd>
+      </dl>
+     <h2>Advanced Form Example with Additional Input Types</h2>
+     <iframe src="https://trinket.io/embed/html/26c0d27b6c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+      <div id="topic14" class="topic">
+        <h2>Common Form Attributes</h2>
+        <dl>
+          <dt>action</dt>
+          <dd> Specifies the URL where the form data will be sent when the form is submitted</dd>
+          <dt>method</dt>
+          <dd>Specifies the HTTP method to use when sending form data. Common values are GET and POST</dd>
+          <dt>enctype</dt>
+          <dd> Specifies how the form data should be encoded when submitting it to the server. Common values are application/x-www-form-urlencoded, multipart/form-data, and text/plain</dd>
+          <dt>autocomplete</dt>
+          <dd>Specifies whether the browser should automatically complete input values based on previous entries. Can be on or off</dd>
+          <dt>target</dt>
+          <dd>Specifies where to display the response after submitting the form. Common values are _self, _blank, _parent, and _top</dd>
+          <dt>novalidate</dt>
+          <dd>If present, the form will not be validated before submission</dd>
+          <dt>name</dt>
+          <dd>Specifies a name for the form, which is used to reference the form in scripts</dd>
+
+        </dl>
+       <h2>Basic Form Example</h2>
+       <iframe src="https://trinket.io/embed/html/15c0b3b00a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>Detailed Examples of Form Attributes</h2>
+       <span>action Attribute</span>
+       <iframe src="https://trinket.io/embed/html/3db1827d97" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>method Attribute</span>
+       <iframe src="https://trinket.io/embed/html/c6e9d7f010" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>enctype Attribute</span>
+       <iframe src="https://trinket.io/embed/html/dcbe833104" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>autocomplete Attribute</span>
+       <iframe src="https://trinket.io/embed/html/73987d706c" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>target Attribute</span>
+       <iframe src="https://trinket.io/embed/html/a02a1b14c0" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>novalidate Attribute</span>
+       <iframe src="https://trinket.io/embed/html/9bc6187fb3" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>name Attribute</span>
+       <iframe src="https://trinket.io/embed/html/3c63b66119" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <h2>Advanced Form Example with All Attributes</h2>
+      <iframe src="https://trinket.io/embed/html/4cb38cc656" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic15" class="topic active">
+      <h2>input type</h2>
+      <p>The &lt;input&gt; element in HTML is used to create interactive controls for web-based forms that accept user input. The type attribute specifies the type of input control to create. Each type provides different functionalities and user experiences.</p>
+      <h2>Common Input Types</h2>
+      <p><span>text:</span> A single-line text input <br>
+        <span>password:</span> A single-line text input that masks the characters<br>
+        <span>email:</span> A single-line text input for email addresses<br>
+        <span>number:</span> A single-line text input for numbers<br>
+        <span>date:</span> A control for selecting a date<br>
+        <span>checkbox:</span> A checkbox input<br>
+        <span>radio:</span> A radio button input<br>
+        <span>file:</span> An input for file uploads<br>
+        <span>submit:</span> A button to submit the form<br>
+        <span>reset:</span> A button to reset the form values<br>
+        <span>button:</span> A generic button<br>
+        <span>range:</span> A slider control for selecting a value from a range<br>
+        <span>color:</span> A color picker<br>
+        <span>tel:</span> A single-line text input for telephone numbers<br>
+        <span>url:</span> A single-line text input for URLs.</p>
+        <h2>Examples of Different Input Types</h2>
+        <iframe src="https://trinket.io/embed/html/b8c3e69bb2" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic16" class="topic active">
+       <h2>Input Attributes</h2>
+       <p>The &lt;input&gt; element in HTML has several attributes that customize its behavior and appearance. Here are some common attributes, their explanations, and examples of how to use them</p>
+       <h2>Common Input Attributes</h2>
+       <p><span>type:</span> Specifies the type of input (e.g., text, password, email, etc.)<br>
+        <span>name:</span> Specifies the name of the input, which is used when submitting form data<br>
+        <span>id:</span> Specifies a unique identifier for the input, used to reference the element in CSS and JavaScript<br>
+        <span>value:</span> Specifies the initial value of the input<br>
+        <span>placeholder:</span> Provides a short hint that describes the expected value of the input<br>
+        <span>required:</span> Specifies that the input must be filled out before submitting the form<br>
+        <span>readonly:</span> Specifies that the input is read-only<br>
+        <span>disabled:</span> Specifies that the input is disabled and not editable or submittable<br>
+        <span>maxlength:</span> Specifies the maximum number of characters allowed in the input<br>
+        <span>min and max:</span> Specify the minimum and maximum values for input types like number, date, range<br>
+        <span>pattern:</span> Specifies a regular expression that the input's value must match for validation<br>
+        <span>autocomplete:</span> Specifies whether the browser should provide autocomplete suggestions for the input.</p>
+
+       <h2>Examples of Using Input Attributes</h2>
+       <span>Text Input with Placeholder and Maxlength</span>
+       <iframe src="https://trinket.io/embed/html/7070f1d013" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>Password Input with Required and Autocomplete</span>
+       <iframe src="https://trinket.io/embed/html/e1dc7f701a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>Number Input with Min and Max</span>
+       <iframe src="https://trinket.io/embed/html/ea5129834d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>Date Input with Min and Max</span>
+       <iframe src="https://trinket.io/embed/html/92f783d30d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <span>Email Input with Pattern</span>
+       <iframe src="https://trinket.io/embed/html/44f9ddd73d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+      </div>
+
+      <div id="topic17" class="topic">
+       <h2>video</h2>
+       <p>The &lt;video&gt; element in HTML is used to embed videos or video streams into a document. It supports various video formats and codecs, providing a simple way to integrate multimedia content into web pages</p>
+       <h2>Basic Structure of &lt;video&gt;</h2>
+       <iframe src="https://trinket.io/embed/html/1e4ce88e4d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+       <h2>Explanation</h2>
+       <p><span>&lt;video&gt;:</span> This is the opening tag for the video element <br>
+        <span>controls:</span> This attribute adds video controls such as play, pause, volume, and fullscreen buttons to the video player<br>
+       <span> width="600" height="400":</span> Sets the dimensions of the video player<br>
+        <span>&lt;source&gt;:</span> This element is used to specify multiple video sources and their types using the src and type attributes. Browsers will choose the first source they support<br>
+        <span>src="video.mp4":</span> Specifies the URL of the video file<br>
+       <span> type="video/mp4": </span>Specifies the MIME type of the video file. This helps the browser understand which codec to use for decoding<br>
+       <span> Fallback Content:</span> Anything placed between the opening and closing &lt;video&gt; tags will be shown if the browser doesn't support the &lt;video&gt; element.</p>
+      <h2>Additional Attributes</h2>
+      <p><span>autoplay:</span> Specifies that the video should start playing as soon as it is loaded <br>
+        <span>loop:</span> Specifies that the video should start over again when it reaches the end<br>
+        <span></span> Specifies that the video's audio output should be muted<br>
+        <span>preload:</span> Specifies how the video should be loaded when the page loads. Possible values are auto, metadata, and none<br>
+        <span>poster:</span> Specifies an image to be shown while the video is downloading, or until the user hits the play button. It's like a placeholder for the video.</p>
+       <h2>Example with Additional Attributes</h2>
+       <iframe src="https://trinket.io/embed/html/830e34c929" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div id="topic18" class="topic">
+       
+    
+
+
+
+
+
+
+
+      </div>
+      <div id="topic19" class="topic">
+      
+      </div>
+      <div id="topic20" class="topic">
+       
+      </div>
+      <div id="topic1" class="topic active">
+       
+       
+      </div>
+      <div id="topic2" class="topic">
+       
+      </div>
+      <div id="topic3" class="topic">
+       
+      </div>
+      <div id="topic4" class="topic">
+      
+      </div>
+      <div id="topic5" class="topic">
+      
+      </div>
+  </div>
+  <style>
+
+   
+    /*  content code */
+    .topic{
+      font-size:medium;
+      text-transform: lowercase;
+    }
+    .content h2{
+      font-size:30px;
+      padding: 10px;
+      text-transform: capitalize;
+    }
+    .content p{
+      padding: 10px;
+      line-height: 20px;
+      font-size:20px;
+      text-transform: lowercase;
+    }
+    span{
+      font-weight:bold;
+      font-size: 20px;
+      padding: 10px;
+
+    }
+   dt{
+    padding: 20px;
+    font-size:20px;
+    font-weight: bold;
+   }
+   dd{
+    line-height:20px;
+    font-size:20px;
+   }
+  .cmd{
+    margin-left:7%;
+    padding:18px;
+    line-height: 26px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+    /* finished content code */
+
+
+
+
+
+
+        *{
+        text-transform: capitalize;
+       
+    }
+
+ #leftMenu button{
+margin:12px;
+
+ }
+  
+    
+    nav{
+        width:15%;
+        float: left;
+        background-color: rgb(139, 139, 137);
+        position: fixed;
+        overflow-y:auto ;
+        height:81%;
+        padding-left:29px ;
+        font-size:medium;
+        margin: 0;
+        border-radius: 10px;
+        
+    }
+    .bottomnav a li{ 
+      padding:43px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+     
+    }
+    
+    pre{
+        width: 30%;
+    }
+    
+    h3{
+        color: green;
+        padding: 10px;
+    }
+    nav a{
+        text-decoration:none;
+        font-size: medium;
+        
+    }
+    nav a:hover{
+        background-color: rgb(224, 217, 217);
+      
+       
+    }
+    nav a:active{
+      color: green;
+    }
+    .content{
+        width:80%;
+        float:right;
+        padding:5px;
+        margin-right:16%;
+        background-color: white;
+    }
+    
+    ul button{
+        padding:10px 20px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        background-color: green;
+        cursor: pointer;
+
+    }
+.topic {
+  display: none;
+}
+.topic.active {
+  display: block;
+}
+
+/* responsible */
+@media screen and (max-width:600px){
+
+
+  nav{
+        padding: 15px;
+        width:30%;
+        float: left;
+        background-color: rgb(139, 139, 137);
+        position: fixed;
+        overflow-y:auto ;
+        height:80%;
+        padding-left:10px ;
+        font-size: x-small;
+        line-height:3px;
+    }
+    .bottomnav a li{
+      padding:3px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    
+    }
+    iframe{
+     width: 100%;
+     height: 400;
+     padding: 10px;
+     padding-left: 0;
+     padding-right: 0;
+    }
+    .content h2{
+      font-size:medium;
+      padding: 10px;
+      text-transform: capitalize;
+    }
+    .content p{
+      padding: 5px;
+      line-height: 20px;
+      font-size:x-small;
+      text-transform: lowercase;
+    }
+    dt{
+    padding: 10px;
+    font-weight:14px;
+     font-size:medium;
+   }
+   span{
+    font-size:medium ;
+   }
+   dd{
+    line-height:30px;
+    font-size:x-small;
+   }
+    h3{
+        color: green;
+        padding:10px;
+        font-size:small ;
+    }
+    nav a{
+        text-decoration:none;
+        
+        
+    }
+    nav a:hover{
+        background-color: rgb(224, 217, 217);
+       
+    }
+    .content{
+      width:97%;
+        float:right;
+        padding: 5px;
+        margin: 0;
+    }
+    a button{
+        padding:5px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        background-color: green;
+        cursor: pointer;
+        border-radius: 10px;
+
+    }
+.topic {
+  display: none;
+}
+.topic.active {
+  display: block;
+}
+
+}
+
+
+/* responsible code finished */
+
+
+/* content code */
+
+.topic{
+      font-size: small;
+      text-transform: lowercase;
+    }
+    .content h2{
+      padding: 10px;
+    }
+    .content p{
+      padding: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* finised code */
+
+
+
+
+
+  </style>
+<script>
+
+  
+function showTopic(topicId) {
+// Hide all topics
+var topics = document.querySelectorAll('.topic');
+topics.forEach(function(topic) {
+  topic.classList.remove('active');
+});
+
+
+// Show the selected topic
+var selectedTopic = document.getElementById(topicId);
+selectedTopic.classList.add('active').close();
+}
+
+
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const leftMenu = document.getElementById('leftMenu');
+
+    openMenuBtn.addEventListener('click', () => {
+        leftMenu.style.left = '0';
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+        leftMenu.style.left = '-200px';
+    });
+
+</script>
+
+
+<!--finish center of the code-->
+
+
+
+    <!--footer code-->
+
+   
+</body>
+</html>
+<script>
+  function darkmood(){
+    let body=document.getElementById("body").style.backgroundColor="black";
+    let color=document.getElementById("body").style.color="white";
+    let head=document.getElementById("header").style.color="black";
+  }
+</script>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
